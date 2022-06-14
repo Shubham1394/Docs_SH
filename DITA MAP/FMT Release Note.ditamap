@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>User Guide</title>
+    <topicref href="../DITA%20TOPICS/FMT%20Release%20Notes/Introduction.dita">
+        <topicref href="../DITA%20TOPICS/FMT%20Release%20Notes/RN2.dita"/>
+        <topicref href="../DITA%20TOPICS/FMT%20Release%20Notes/RN1.dita">
+            <topicref href="../DITA%20TOPICS/FMT%20Release%20Notes/Order_Date_Scenarios.dita"/>
+        </topicref>
+    </topicref>
+</map>

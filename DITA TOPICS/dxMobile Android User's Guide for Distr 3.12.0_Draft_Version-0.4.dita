@@ -1,0 +1,3006 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE topic
+  PUBLIC "-//OASIS//DTD DITA Topic//EN" "topic.dtd">
+<topic id="id">
+  <title>dxMobile Android User's Guide for Distr 3.12.0_Draft_Version-0.4</title>
+  <body>
+    <p outputclass="p1">
+      <image href="media/img.png"/>
+    </p>
+    <p outputclass="p3">dxMobile for Android</p>
+    <p outputclass="p4">User’s Guide for
+Distribution</p>
+    <p outputclass="p5">Version 3.12.0</p>
+    <p outputclass="p2">dxMobile for Android User’s
+Guide for Distribution</p>
+    <p outputclass="p2">Version 3.12.0</p>
+    <p outputclass="p2">Disclaimer</p>
+    <p outputclass="p2">The information contained in this publication
+is subject to change without notice. TF Courier Inc. makes no
+warranty of any kind with regard to this manual, including, but not
+limited to, the implied warranties of merchantability and fitness
+for a particular purpose. TF Courier Inc. shall not be liable for
+errors contained herein or for incidental or consequential damages
+in connection with the furnishing, performance, or use of this
+manual.</p>
+    <p outputclass="p2">Copyright</p>
+    <p outputclass="p2">Copyright © 2022. TF Courier Inc. All
+rights reserved.</p>
+    <p outputclass="p2">Trademarks</p>
+    <p outputclass="p2">TF Courier Inc., the TF Courier Inc. logo, and
+all other TF Courier Inc. product names and slogans are trademarks
+or registered trademarks of TF Courier Inc. in the USA and/or other
+countries. Other product names mentioned herein may be trademarks
+or registered trademarks of their respective companies.</p>
+    <p outputclass="p2">March, 2022</p>
+    <p>TForce Final Mile</p>
+    <p>
+14881 Quorum Drive, Suite 700</p>
+    <p>
+Dallas, TX 75254</p>
+    <p>USA</p>
+    <p>
+Phone: 855.396.2639</p>
+    <p outputclass="p2">http://www.tforce.com</p>
+    <p outputclass="p8">Table of Contents</p>
+    <p outputclass="p9">TOC \o "3-3" \t "Heading 1,1,Heading
+2,2" Introduction <xref href="#id/Toc99359009">6</xref>
+    </p>
+    <p outputclass="p9">Requirements <xref href="#id/Toc99359010">6</xref>
+    </p>
+    <p outputclass="p9">Install dxMobile from the Google
+Play Store <xref href="#./Toc99359011">6</xref>
+    </p>
+    <p outputclass="p9">Log In to dxMobile <xref href="#./Toc99359012">18</xref>
+    </p>
+    <p outputclass="p9">Log In for Dispatch <xref href="#id/Toc99359013">20</xref>
+    </p>
+    <p outputclass="p9">Managing of Sessions <xref href="#id/Toc99359014">21</xref>
+    </p>
+    <p outputclass="p9">Scanner Connection <xref href="#id/Toc99359015">23</xref>
+    </p>
+    <p outputclass="p10">Bluetooth <xref href="#./Toc99359016">24</xref>
+    </p>
+    <p outputclass="p9">Overview of Routes <xref href="#id/Toc99359017">25</xref>
+    </p>
+    <p outputclass="p10">Audited Versus Non-Audited Scans <xref href="#./Toc99359018">26</xref>
+    </p>
+    <p outputclass="p9">Quick Steps for Working with
+Routes <xref href="#id/Toc99359019">27</xref>
+    </p>
+    <p outputclass="p9">Load Packages <xref href="#./Toc99359020">27</xref>
+    </p>
+    <p outputclass="p10">Un-scanned Items List <xref href="#id/Toc99359021">32</xref>
+    </p>
+    <p outputclass="p10">Scanned Items List <xref href="#id/Toc99359022">33</xref>
+    </p>
+    <p outputclass="p10">Load Scan by Stop <xref href="#./Toc99359023">33</xref>
+    </p>
+    <p outputclass="p9">Induction Scan <xref href="#id/Toc99359024">38</xref>
+    </p>
+    <p outputclass="p10">Step 1: Create an Induction Scan Group[DECS
+Administration] <xref href="#id/Toc99359025">39</xref>
+    </p>
+    <p outputclass="p11">Delete a Scan Group from a Customer <xref href="#id/Toc99359026">40</xref>
+    </p>
+    <p outputclass="p10">Step 2: Add an Induction Scan Groupto a Customer [DECS
+Administration] <xref href="#id/Toc99359027">40</xref>
+    </p>
+    <p outputclass="p11">Delete a Customer from a Scan Group<xref href="#id/Toc99359028">41</xref>
+    </p>
+    <p outputclass="p10">Step 3: Perform an Induction Scanin dxMobile <xref href="#id/Toc99359029">42</xref>
+    </p>
+    <p outputclass="p11">View Scan
+Eventsin Order Entry <xref href="#id/Toc99359030">46</xref>
+    </p>
+    <p outputclass="p9">Receive Scan <xref href="#id/Toc99359031">46</xref>
+    </p>
+    <p outputclass="p9">Hold Scan <xref href="#id/Toc99359032">50</xref>
+    </p>
+    <p outputclass="p9">Consolidation Scan <xref href="#id/Toc99359033">52</xref>
+    </p>
+    <p outputclass="p9">Release Scan <xref href="#id/Toc99359034">55</xref>
+    </p>
+    <p outputclass="p9">Complete Stops on a Route <xref href="#id/Toc99359035">57</xref>
+    </p>
+    <p outputclass="p10">Select and Start a Route <xref href="#./Toc99359036">57</xref>
+    </p>
+    <p outputclass="p10">Stop Type Codes <xref href="#./Toc99359037">60</xref>
+    </p>
+    <p outputclass="p10">Stop Status Codes <xref href="#id/Toc99359038">61</xref>
+    </p>
+    <p outputclass="p10">View Stop Details <xref href="#id/Toc99359039">63</xref>
+    </p>
+    <p outputclass="p10">Submit Your Stop Arrival Time<xref href="#./Toc99359040">64</xref>
+    </p>
+    <p outputclass="p10">Scan Packages <xref href="#./Toc99359041">66</xref>
+    </p>
+    <p outputclass="p11">Un-scanned Items List <xref href="#id/Toc99359042">68</xref>
+    </p>
+    <p outputclass="p11">Scanned Items List <xref href="#id/Toc99359043">69</xref>
+    </p>
+    <p outputclass="p10">Special Case <xref href="#id/Toc99359044">69</xref>
+    </p>
+    <p outputclass="p10">Enter a POD/Signature <xref href="#id/Toc99359045">72</xref>
+    </p>
+    <p outputclass="p11">Enter a POD <xref href="#./Toc99359046">72</xref>
+    </p>
+    <p outputclass="p11">Enter a Signature <xref href="#./Toc99359047">73</xref>
+    </p>
+    <p outputclass="p10">Force Capture of Signature/Deliver Image for
+the Delivery <xref href="#id/Toc99359048">76</xref>
+    </p>
+    <p outputclass="p10">Overage Order Creation upon Scanning on
+DEPART <xref href="#id/Toc99359049">76</xref>
+    </p>
+    <p outputclass="p10">Enter a Delivery Code <xref href="#./Toc99359050">78</xref>
+    </p>
+    <p outputclass="p10">Depart a Stop <xref href="#./Toc99359051">81</xref>
+    </p>
+    <p outputclass="p9">Exceptions <xref href="#./Toc99359052">83</xref>
+    </p>
+    <p outputclass="p10">Stop Exceptions <xref href="#id/Toc99359053">86</xref>
+    </p>
+    <p outputclass="p10">Item Exceptions <xref href="#id/Toc99359054">92</xref>
+    </p>
+    <p outputclass="p10">Filter the Stop List <xref href="#id/Toc99359055">92</xref>
+    </p>
+    <p outputclass="p10">Location Scan <xref href="#id/Toc99359056">93</xref>
+    </p>
+    <p outputclass="p9">dxMobile Features <xref href="#id/Toc99359057">101</xref>
+    </p>
+    <p outputclass="p10">Update the Number of Pieces <xref href="#id/Toc99359058">101</xref>
+    </p>
+    <p outputclass="p10">Re-Download Route <xref href="#id/Toc99359059">103</xref>
+    </p>
+    <p outputclass="p10">Re-Download Jobs <xref href="#id/Toc99359060">104</xref>
+    </p>
+    <p outputclass="p10">Refresh All <xref href="#id/Toc99359061">104</xref>
+    </p>
+    <p outputclass="p10">Flush Messages <xref href="#id/Toc99359062">105</xref>
+    </p>
+    <p outputclass="p10">Bluetooth <xref href="#id/Toc99359063">107</xref>
+    </p>
+    <p outputclass="p10">About <xref href="#id/Toc99359064">108</xref>
+    </p>
+    <p outputclass="p10">Support <xref href="#id/Toc99359065">109</xref>
+    </p>
+    <p outputclass="p10">Re-do Signature <xref href="#id/Toc99359066">111</xref>
+    </p>
+    <p outputclass="p10">Capture a Stop Reference Image <xref href="#id/Toc99359067">113</xref>
+    </p>
+    <p outputclass="p10">Order Entry <xref href="#id/Toc99359068">115</xref>
+    </p>
+    <p outputclass="p10">Transfer Packages to Another Stop on the
+Route <xref href="#id/Toc99359069">117</xref>
+    </p>
+    <p outputclass="p10">Join Stops <xref href="#id/Toc99359070">118</xref>
+    </p>
+    <p outputclass="p9">Create Routes Based on Scanning 2-D
+Barcodes <xref href="#id/Toc99359071">120</xref>
+    </p>
+    <p outputclass="p11">1. Data Format Option [DECS
+Administration] <xref href="#./Toc99359072">121</xref>
+    </p>
+    <p outputclass="p11">2. Enable the Create
+RouteOption [DECS Administration] <xref href="#./Toc99359073">122</xref>
+    </p>
+    <p outputclass="p11">3. Define the Route
+Plan ScopeOption [DECS Administration] <xref href="#id/Toc99359074">123</xref>
+    </p>
+    <p outputclass="p11">4.Package Validation Check <xref href="#id/Toc99359075">125</xref>
+    </p>
+    <p outputclass="p10">Messaging <xref href="#id/Toc99359076">126</xref>
+    </p>
+    <p outputclass="p10">View Messages <xref href="#id/Toc99359077">126</xref>
+    </p>
+    <p outputclass="p10">Delete a Message <xref href="#id/Toc99359078">127</xref>
+    </p>
+    <p outputclass="p10">Reply to a Message <xref href="#id/Toc99359079">128</xref>
+    </p>
+    <p outputclass="p10">Filter Messages <xref href="#id/Toc99359080">128</xref>
+    </p>
+    <p outputclass="p10">Delete All Messages <xref href="#id/Toc99359081">133</xref>
+    </p>
+    <p outputclass="p10">Create Messages <xref href="#id/Toc99359082">133</xref>
+    </p>
+    <p outputclass="p9">Power Off/Exit dxMobile <xref href="#id/Toc99359083">136</xref>
+    </p>
+    <p outputclass="p9">GPS Error Codes <xref href="#id/Toc99359084">138</xref>
+    </p>
+    <p outputclass="p9">Frequently Asked Questions <xref href="#id/Toc99359085">139</xref>
+    </p>
+    <p outputclass="p12">
+      <ph id="Toc99359009">Introduction</ph>
+    </p>
+    <p outputclass="p13">This User’s Guide describes
+the process of working with distribution routes using the dxMobile
+application on an Android device. It is intended for TForce
+Independent Contractors (ICs) who are responsible for delivering
+packages associated with distribution routes (routes that start at
+the depot and have multiple drop-off locations).</p>
+    <p outputclass="p13">Your Android device is used, in
+conjunction with dxMobile, to record barcode scans when packages
+are received, loaded onto vehicles, and picked up or delivered to
+their destination.</p>
+    <p outputclass="p12">
+      <ph id="Toc99359010">Requirements</ph>
+    </p>
+    <p outputclass="p14">The minimum requirements to run the
+dxMobile for Android application are listed below:</p>
+    <p outputclass="p15">​ Screen resolution - 480 x 800 or above</p>
+    <p outputclass="p15">​ OS - version 5.0 or above</p>
+    <p outputclass="p15">​ WIFI and Bluetooth connection</p>
+    <p outputclass="p17">​ Google Maps</p>
+    <p outputclass="p18">​ An Android phone withoutFix Focus. We do not recommend
+using a phone with Fix Focus, because the scanning feature using the internal camera
+will not work.</p>
+    <p id="Install_dxMobile_Via" outputclass="p12">Install dxMobile
+from the Google Play Store</p>
+    <p outputclass="p14">There are three ways to install
+dxMobile (on your Android device) from the Google Play
+Store:</p>
+    <p outputclass="p19">​ I have an existin<ph id="Hlt432447909">g</ph>Go<ph id="Hlt9900408">o</ph>gle account.</p>
+    <p outputclass="p19">​ I want to create a<ph id="Hlt432447910"/>new Google account using a ne<ph id="Hlt9900409">w</ph>Gmail address.</p>
+    <p outputclass="p19">​ I wa<ph id="Hlt432447919">n</ph>t to create a new Google account using a current email
+address (not a Gmail address).</p>
+    <p id="Toc359312020" outputclass="p20">Install dxMobile Using an Existing Google
+Account</p>
+    <p outputclass="p21">To install dxMobile on an Android device using
+an existing Google account:</p>
+    <p outputclass="p22">1.​ On the Android device, on the Appsscreen, touch the
+Settingsicon.</p>
+    <p outputclass="p22">2.​ On the Settingsscreen, in the Personalsection, touch
+Accounts.</p>
+    <p outputclass="p22">3.​ TouchAdd Account.</p>
+    <p outputclass="p23">4.​ On the Add an
+Accountscreen, touch Google. The Google Sign Inscreen appears,
+as shown:</p>
+    <p outputclass="p24">
+      <image href="media/img(1).png"/>
+    </p>
+    <p outputclass="p23">5.​ On the Google Sign
+Inscreen, in the Email or Phonefield, type your
+Google account email or phone number.</p>
+    <p outputclass="p23">6.​ Touch Next.</p>
+    <p outputclass="p23">7.​ In the Passwordfield, enter your Google account password.</p>
+    <p outputclass="p25">
+      <image href="media/img(2).png"/>
+    </p>
+    <p outputclass="p26">8.​ Touch Next. The Google Terms of
+Servicescreen appears, as shown:</p>
+    <p outputclass="p27">
+      <image href="media/img(3).png"/>
+    </p>
+    <p outputclass="p22">9.​ Review the terms, and touch I
+agree. The existing Google Account displays
+in the Account list.</p>
+    <p outputclass="p22">10.​ Press the Returnbutton until you return to the Appsscreen.</p>
+    <p outputclass="p22">11.​ Touch the <image href="media/img(4).png"/>(Play Store) icon. The Google Play
+Storedisplays.</p>
+    <p outputclass="p22">12.​ In the Searchfield, type “dxMobile,” as shown below. A
+list of apps displays.</p>
+    <p outputclass="p28">
+      <image href="media/img(5).png"/>
+    </p>
+    <p outputclass="p30">13.​  Touch the TdxMobile application that displays the
+“TdxMobile” logo, as shown:</p>
+    <p outputclass="p31">
+      <image href="media/img(6).png"/>
+    </p>
+    <p outputclass="p22">14.​ Touch Install. The dxMobile application is downloaded to your Android
+device.</p>
+    <p id="Install_dxMobile_By" outputclass="p20">
+      <ph id="Toc9946846">Install dxMobile byCreating a New Google Account
+Using a New Gmail Address</ph>
+    </p>
+    <p outputclass="p32">To install dxMobile on an Android device by
+creating a new Google account using a new Gmail address:</p>
+    <p outputclass="p33">1.​ On the
+Android device, on the Apps
+screen, touch the Settings
+icon.</p>
+    <p outputclass="p33">2.​ On
+the Settingsscreen, in
+the Personalsection,
+touch Accounts.</p>
+    <p outputclass="p33">3.​ On
+the Accountscreen,
+touch Add Account.</p>
+    <p outputclass="p33">4.​ On
+the Add an Account screen,
+touch Google. The Google Sign Inscreen appears.</p>
+    <p outputclass="p33">5.​ Touch Create Account. The Create a Google Accountscreen appears, as
+shown:</p>
+    <p outputclass="p34">
+      <image href="media/img(7).png"/>
+    </p>
+    <p outputclass="p35">6.​ In
+the First field, type your
+first name.</p>
+    <p outputclass="p36">7.​ In
+the Last field, type your last
+name.</p>
+    <p outputclass="p33">8.​ Touch Next. The Basic
+Informationscreen appears, as shown:</p>
+    <p outputclass="p37">
+      <image href="media/img(8).png"/>
+    </p>
+    <p outputclass="p39">9.​ Enter
+your birth date and gender, and touch Next. The Choose
+Your Gmail Addressscreen appears. A list of suggested
+Gmail addresses displays, as shown:</p>
+    <p outputclass="p34">
+      <image href="media/img(9).png"/>
+    </p>
+    <p outputclass="p33">10.​ Select a suggested Gmail
+address by touching the option button next to the desired address,
+or touch the “Create a different Gmail address” option
+button, and type a new address. “@gmail.com” is
+automatically appended to the address.</p>
+    <p outputclass="p33">11.​ Touch Next. The Passwordscreen appears, as
+shown:</p>
+    <p outputclass="p34">
+      <image href="media/img(10).png"/>
+    </p>
+    <p outputclass="p40">12.​ In
+the Password field, type a
+password (8 characters minimum).</p>
+    <p outputclass="p41">13.​ In
+the Confirm field, type your
+password again, and touch Next. The Add Phone
+Number screen appears.</p>
+    <p outputclass="p41">14.​ Touch Skip. The Privacy
+and Termsscreen appears.</p>
+    <p outputclass="p41">15.​ Touch I agree. A confirmation screen appears, as
+shown:</p>
+    <p outputclass="p42">
+      <image href="media/img(11).png"/>
+    </p>
+    <p outputclass="p41">16.​ Touch Next.</p>
+    <p outputclass="p43">17.​ Press
+the Returnbutton to return to
+the Appsscreen.</p>
+    <p outputclass="p43">18.​ Touch
+the <image href="media/img(12).png"/>(Play Store) icon. The Google Play Storedisplays.</p>
+    <p outputclass="p22">19.​ In the Searchfield, type “dxMobile,” as shown below. A
+list of apps displays.</p>
+    <p outputclass="p44">
+      <image href="media/img(13).png"/>
+      <image href="media/img."/>
+    </p>
+    <p outputclass="p45">20.​ Touch
+the TdxMobile application that displays the “TdxMobile”
+logo, as shown:</p>
+    <p outputclass="p42">
+      <image href="media/img(14).png"/>
+    </p>
+    <p outputclass="p46">21.​ Touch Install. The dxMobile application is
+downloaded to your Android device.</p>
+    <p id="Install_dxMobile_By_1" outputclass="p20">
+      <ph id="Toc9946847">Install dxMobile by Creating a New Google Account
+Using a Current Email Address (Not a Gmail Address)</ph>
+    </p>
+    <p outputclass="p32">If you want to install dxMobile on an Android
+device by creating a new Google account using a current email
+address (not a Gmail address), you must do so through your Internet
+browser. You cannot perform this task from the Settingson your Android device.</p>
+    <p outputclass="p47">1.​ On the
+Android device, touch the Browser
+icon. The Internet browser displays.</p>
+    <p outputclass="p48">2.​ In
+the Searchfield,
+typehttps://accounts.google.com/signup.
+The Create Your Google
+Accountscreen appears, as shown:</p>
+    <p outputclass="p42">
+      <image href="media/img(15).png"/>
+    </p>
+    <p outputclass="p49">3.​ In the FirstNamefield, enter your first name.</p>
+    <p outputclass="p49">4.​ In the Last Namefield, enter your last name.</p>
+    <p outputclass="p50">5.​ Touch the Use My Current Email
+Address Insteadlink, as shown:</p>
+    <p outputclass="p51">
+      <image href="media/img(16).png"/>
+    </p>
+    <p outputclass="p52">6.​ In
+the Your Email Address field,
+type your current email address, as shown:</p>
+    <p outputclass="p53">
+      <image href="media/img(17).png"/>
+    </p>
+    <p outputclass="p52">7.​ In
+the Passwordfield, type a
+password. User 8 or more characters with a mix of letters, numbers,
+and symbols.</p>
+    <p outputclass="p52">8.​ In
+the Confirmfield, type the
+password again.</p>
+    <p outputclass="p52">9.​ Touch Next. The Verify
+Your Email Addressscreen appears, as shown:</p>
+    <p outputclass="p54">
+      <image href="media/img(18).png"/>
+    </p>
+    <p outputclass="p45">10.​ Enter
+the verification code that was sent to your email
+address.</p>
+    <p outputclass="p45">11.​ Touch Verify. The Welcomepage displays, as shown:</p>
+    <p outputclass="p34">
+      <image href="media/img(19).png"/>
+    </p>
+    <p outputclass="p45">12.​ Enter
+your phone number, if desired.</p>
+    <p outputclass="p45">13.​ Enter
+your birthdate, and gender.</p>
+    <p outputclass="p45">14.​ Touch Next. The Privacy
+and Termsscreen appears.</p>
+    <p outputclass="p45">15.​ Touch I Agree.</p>
+    <p outputclass="p43">16.​ Press
+the Returnbutton to return to
+the Appsscreen.</p>
+    <p outputclass="p55">17.​ Touch
+the <image href="media/img(20).png"/>(Play Store) icon. The Google Play Storedisplays.</p>
+    <p outputclass="p22">18.​ In the Searchfield, type “dxMobile,” as shown below. A
+list of apps displays.</p>
+    <p outputclass="p44">
+      <image href="media/img(21).png"/>
+      <image href="media/img(1)"/>
+    </p>
+    <p outputclass="p45">19.​ Touch
+the TdxMobile application that displays the “TdxMobile”
+logo, as shown:</p>
+    <p outputclass="p42">
+      <image href="media/img(22).png"/>
+    </p>
+    <p outputclass="p46">20.​ Touch Install. The dxMobile application is
+downloaded to your Android device.</p>
+    <p id="Install_dxMobile_Via_1" outputclass="p56">Log In to
+dxMobile</p>
+    <p outputclass="p57">
+      <image href="media/img(23).png"/>To
+log in to dxMobile:</p>
+    <p outputclass="p26">1.​ On the android device, touch the (dxMobile) icon. The
+dxMobile Registrationscreen appears.</p>
+    <p outputclass="p23">2.​ Type your Registration Code
+:dynamex</p>
+    <p outputclass="p26">3.​ Touch Register. The Loginscreen appears, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img.jpg"/>
+    </p>
+    <p outputclass="p23">4.​ Type your Driver
+Number.</p>
+    <p outputclass="p26">5.​ Touch Login. The Stop Summaryscreen appears, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(24).png"/>
+    </p>
+    <p id="Toc9946849" outputclass="p12">
+      <ph id="Toc99359013">Log In for
+Dispatch</ph>
+    </p>
+    <p outputclass="p13">Before you can update stop details
+and complete jobs, you must change your status from
+“out” to “in.” By logging in, you are
+letting the Dispatcher know that you are ready for work. When you
+are no longer available for work, you should log off to let the
+Dispatcher know your status.</p>
+    <p outputclass="p59">To log in for Dispatch:</p>
+    <p outputclass="p23">1.​ On the Stop Summaryscreen, touch the down arrow in the title bar to display
+the Status Updatemenu, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(25).png"/>
+    </p>
+    <p outputclass="p26">2.​ Touch <image href="media/img.bmp"/>Login,
+as shown above. The Loginscreen appears, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(26).png"/>
+    </p>
+    <p outputclass="p23">3.​ In the Zip/Zonefield, type your zip code or zone.</p>
+    <p outputclass="p26">4.​ Touch Submit. The Informationscreen appears indicating that you are logged in for
+Dispatch.</p>
+    <p outputclass="p60">
+      <image href="media/img(27).png"/>
+    </p>
+    <p outputclass="p26">5.​ Touch OK.</p>
+    <p outputclass="p12">
+      <ph id="Toc99359014">Managingof Sessions</ph>
+    </p>
+    <p outputclass="p62">A new feature of Managing of sessions with
+token has been added. Token expires/revokes access from the active
+session, if another user logs in with the same driver
+identification. This prevents multiple users by logging in with the
+same driver login id.</p>
+    <p outputclass="p63">For example:If the Driver 1 is already logged in with the driver ID
+“123456” and at the same time another Driver 2 logs in
+with the same ID “123456”, then the Driver 1 session
+will expire automatically.</p>
+    <p outputclass="p63">Note:
+Below is an example of user performing job on Stop Summary screen,
+but the session management feature has been applied for all
+scenarios where the user is performing any kind of
+activity.</p>
+    <p outputclass="p64">1.​ When the Driver 1 logs in dxMobile with the ID –
+8011, and performs a job on “Stop
+Summary Screen”, the screen shows no
+message of the Invalid token as shown:</p>
+    <p outputclass="p66">
+      <image href="media/img(1).jpg"/>
+    </p>
+    <p outputclass="p68">2.​ However, as soon as Driver 2 logs in with the same
+driver ID - 8011, Driver 1 gets an error “Token Expired” and will
+not be able to perform further action on the device as
+shown:</p>
+    <p outputclass="p66">
+      <image href="media/img(2).jpg"/>
+      <image href="media/img(3).jpg"/>
+    </p>
+    <p outputclass="p67">Note:</p>
+    <p outputclass="p69">If there are pending messages, or
+if the user is on the SCAN screen, or the stop is in arrived, or
+user is performing scans then the session does not expire. But when
+these actions are complete, and the user is on the STOP SUMMARY
+screen the session expires automatically.</p>
+    <p outputclass="p70">
+      <ph id="Toc99359015">Scanner Connection</ph>
+    </p>
+    <p outputclass="p71">The dxMobile application running on an Android
+device uses a built-in scanner for scanning packages. However, for
+large volume, we recommend using a 4820i/Socket scanner. Follow the
+steps in the Bluet<ph id="Hlt432452388">o</ph>othsection
+below to pair your Android device to an external 4820i/ Socket
+scanner.</p>
+    <p id="Bluetooth" outputclass="p72">Bluetooth</p>
+    <p outputclass="p73">To connect to the Honeywell
+4820i/Socket scanner using the Bluetooth option:</p>
+    <p outputclass="p26">1.​ On the Stop Summary
+screen,touch the<image href="media/img(28).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Others. The Utilitiesscreen appears.</p>
+    <p outputclass="p26">3.​ Touch Bluetooth, as shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(29).png"/>
+    </p>
+    <p outputclass="p50">4.​ The Bluetooth
+Servicescreen appears, as shown:</p>
+    <p outputclass="p75">
+      <image href="media/img(30).png"/>
+    </p>
+    <p outputclass="p23">5.​ Touchthe <image href="media/img(1).bmp"/>icon next to “4820i.” The Bluetooth Pairing Requestscreen
+appears.</p>
+    <p outputclass="p23">6.​ Touch Pair.</p>
+    <p outputclass="p26">7.​ Enter the Pairing
+Code“1234.” When the device is
+successfully connected via Bluetooth service, a Bluetooth symbol
+displays at the top of the Stop
+Summaryscreen, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(31).png"/>
+    </p>
+    <p outputclass="p70">
+      <ph id="Toc99359017">Overview of Routes</ph>
+    </p>
+    <p outputclass="p13">DECS supports two types of
+routes: Distributionand Collection. Distribution routes are
+scanned at line-haul, loaded onto the Driver’s vehicle, and
+then delivered to the various locations along the route.
+XE "Distribution scanning:overview" Collection
+routes are scanned at various pickup locations, loaded onto the
+driver’s vehicle, and then delivered to a depot (see ??? for
+assistance on working with Collection routes.</p>
+    <p outputclass="p13">Routes are generated in DECS from
+an Advanced Shipment Notification (ASN) file that is received from
+a Customer. The ASN file contains specific information for the
+route, such as stop details and the number of packages to be
+delivered.</p>
+    <p outputclass="p13">The ASN file may or may not contain
+barcode information for each package that is to be delivered on the
+route. If barcode information is included, the route is considered
+to be “audited.” If no barcode information is sent with
+the ASN file, the route is “non-audited.” For more
+information about how “audited” and
+“non-audited” routes are handled, see Audited <ph id="Hlt358368869">v</ph>
+      <ph id="Hlt432452404">e</ph>
+      <ph id="Hlt358881497">r</ph>s<ph id="Hlt432452403">u</ph>s Non-Audited
+Scans.</p>
+    <p outputclass="p13">The dxMobile application keeps
+track of when packages are received, loaded, and delivered. The
+recording of scans, whether a route is audited or non-audited, and
+other dxMobile configurations are based on a Customer’s
+requirements. For this reason, you may or may not use all of the
+features described in this guide.</p>
+    <p id="Ref177796365" outputclass="p72">Audited Versus Non-Audited Scans</p>
+    <p outputclass="p13">Scans are classified as either
+“Audited” or “Non Audited.”</p>
+    <p outputclass="p76">Audited Scans</p>
+    <p outputclass="p13">Audited scans occur when the
+Customer transmits an ASN file with barcode along with stop
+information. Auditing scan activity allows the dock worker or IC to
+verify package receive, load, or delivery.</p>
+    <p outputclass="p13">When receiving, loading, and
+delivering packages, the DECS system checks to ensure that the
+barcode data in DECS matches what was scanned. The dock worker and
+Independent Contractor (IC) are responsible for verifying that
+there are no package overages or shortages. If there are, these are
+reported to the Customer via the Overage, Shortage, and Damage (OS
+&amp; D) report.</p>
+    <p outputclass="p13">The dxMobile application keeps
+track of packages that are scanned by displaying both the total
+packages requiring a scan and those that have already been scanned
+(e.g., 5/26). If there is an overage or shortage, a warning message
+appears indicating that a discrepancy has occurred. The barcodes of
+the missing packages are also displayed.</p>
+    <p outputclass="p76">Non-Audited Scans</p>
+    <p outputclass="p13">Non-Audited scans occur when the
+Customer submits an ASN file without barcode information. The total
+number of packages to be received and delivered is determined from
+the ASN file. Therefore, the dock worker and Driver know the exact
+number of packages to expect for the route.</p>
+    <p outputclass="p12">
+      <ph id="Toc99359019">Quick Steps for Working with Routes</ph>
+    </p>
+    <p outputclass="p14">The following is a quick reference
+of the daily tasks required to complete a route. For more
+information about these tasks, refer to the chapters in this
+User’s Guide.</p>
+    <table outputclass="t1">
+      <tgroup cols="3">
+        <tbody>
+          <row outputclass="r1">
+            <entry outputclass="p77">Step #</entry>
+            <entry outputclass="p77">Task</entry>
+            <entry outputclass="p77">Procedure</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p78">1</entry>
+            <entry outputclass="p78">Start the day</entry>
+            <entry outputclass="p78">On your Android device, log in to
+dxMobile. Then, log in for Dispatch.</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p78">2</entry>
+            <entry outputclass="p78">Load Pack<ph id="Hlt358881511">a</ph>ges</entry>
+            <entry outputclass="p78">For each package that you load onto
+your vehicle, scan the package barcode. If necessary, note reasons
+(Exceptions) why packages are not loaded.</entry>
+          </row>
+          <row outputclass="r2">
+            <entry outputclass="p78">3</entry>
+            <entry outputclass="p78">Com<ph id="Hlt358368918">p</ph>let<ph id="Hlt358881517">e</ph>S<ph id="Hlt356731372">t</ph>ops on a Route(deliver packages)</entry>
+            <entry outputclass="p78">Submit your arrival time, scan
+packages, enter a POD/signature/delivery code (if necessary), and
+depart the stop.</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p78">4</entry>
+            <entry outputclass="p78">End the day</entry>
+            <entry outputclass="p78">Log out of the dxMobile
+application, check for pending messages, and recharge your
+phone.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p id="Load_Packages" outputclass="p12">Load Packages</p>
+    <p outputclass="p14">As the Driver, you are responsible
+for loading all packages for your route(s) into your vehicle. While
+loading the packages, you may be required to scan each
+package’s barcode. Whether or not a load scan is needed is
+based on Customer or branch requirements.</p>
+    <p outputclass="p79">To load packages:</p>
+    <p outputclass="p23">1.​ On the Stop Summary
+screen,touch the <image href="media/img(32).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Load, as shown:</p>
+    <p outputclass="p80">
+      <image href="media/img(33).png"/>
+    </p>
+    <p outputclass="p49">3.​ The Loadscreen appears, as shown:</p>
+    <p outputclass="p81">
+      <image href="media/img(34).png"/>
+    </p>
+    <p outputclass="p26">4.​ Touch the desired route. The Load Scan screen appears, as
+shown:</p>
+    <p outputclass="p82">
+      <image href="media/img(35).png"/>
+      <image href="media/img(36).png"/>
+      <image href="media/img(37).png"/>
+      <image href="media/img(38).png"/>
+    </p>
+    <p outputclass="p49">5.​ Touch the <image href="media/img(2).bmp"/>(Scan)
+icon. Or, if your device is paired to an external scanner, use the
+external scanner to scan a barcode.</p>
+    <p outputclass="p26">6.​ Scan a barcode. An Infodialog box displays, as
+shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(39).png"/>
+    </p>
+    <p outputclass="p23">7.​ Click OK.</p>
+    <p outputclass="p26">8.​ Touch the <image href="media/img(3).bmp"/>icon to return to the Scanscreen.</p>
+    <p outputclass="p83">Note: To
+undo (delete) the last scan, touch Undo
+Last. The barcode number is
+removed.</p>
+    <p outputclass="p84">9.​ (Optional) Touch Exceptionsto display a list of
+Exceptions, as shown:</p>
+    <p outputclass="p42">
+      <image href="media/img(40).png"/>
+    </p>
+    <p outputclass="p85">10.​ Touch the item Exception that you want to define for a
+package. For item Exception descriptions, see Excep<ph id="Hlt432452424">t</ph>ions.</p>
+    <p outputclass="p23">11.​ Touch Accept.</p>
+    <p outputclass="p26">12.​ Repeat steps 4-10 for each barcode that you want to
+scan.</p>
+    <p outputclass="p86">Note: To
+enter a barcode manually, on the LoadScan screen, touch the
+Scanfield to display a
+keyboard. On the keyboard, type a barcode, then touch the
+<image href="media/img(41).png"/>(Done)
+icon.</p>
+    <p outputclass="p26">13.​ On the LoadScan screen, touch Done to return to the Stop
+Summaryscreen, as shown:</p>
+    <p outputclass="p87">
+      <image href="media/img(42).png"/>
+    </p>
+    <p outputclass="p50">14.​ If you have not scanned all of the expected items,
+a Warningscreen
+appears, as shown:</p>
+    <p outputclass="p53">
+      <image href="media/img(43).png"/>
+    </p>
+    <p outputclass="p88">15.​ If the load is complete, touch Yes to return to the
+Stop Summaryscreen. If
+the load is notcomplete, touch Noto return to the Load
+Scan screen and complete the
+load.</p>
+    <p outputclass="p90">
+      <ph id="Toc99359021">Un-scanned Items List</ph>
+    </p>
+    <p outputclass="p73">To view the Un-scanned Itemslist:</p>
+    <p outputclass="p91">​ On the Load Scanscreen, touch the <image href="media/img(44).png"/>(Menu)icon, and then touch
+Un-scanned Items List, as
+shown:</p>
+    <p outputclass="p53">
+      <image href="media/img(45).png"/>
+    </p>
+    <p outputclass="p92">​ The Un-scanned Itemslist appears, as
+shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(46).png"/>
+    </p>
+    <p outputclass="p90">
+      <ph id="Toc99359022">Scanned Items List</ph>
+    </p>
+    <p outputclass="p93">To view the Scanned Itemslist:</p>
+    <p outputclass="p26">​ On the Loadscreen, touch the <image href="media/img(47).png"/>(Menu)icon, and then touch
+Scanned Items List.
+The Scanned Itemslist appears, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(48).png"/>
+    </p>
+    <p id="Complete_a_Route" outputclass="p90">Load Scan by
+Stop</p>
+    <p outputclass="p73">To perform a load scan by
+stop:</p>
+    <p outputclass="p19">1.​ On the Stop Summaryscreen, touch the<image href="media/img(49).png"/>(Menu)icon.</p>
+    <p outputclass="p91">2.​ Touch Load, as shown:</p>
+    <p outputclass="p94">
+      <image href="media/img(50).png"/>
+    </p>
+    <p outputclass="p91">3.​ The LoadScanscreen appears, as shown:</p>
+    <p outputclass="p95">
+      <image href="media/img(51).png"/>
+    </p>
+    <p outputclass="p19">4.​ Touch the Load
+Scan:Select
+Stoptitle, as shown above. The Stop Listscreen appears, as
+shown:</p>
+    <p outputclass="p96">
+      <image href="media/img(52).png"/>
+    </p>
+    <p outputclass="p97">5.​ Touch the stop for which you want to load items. The
+stop’s Scanscreen appears, as shown:</p>
+    <p outputclass="p98">
+      <image href="media/img(53).png"/>
+    </p>
+    <p outputclass="p91">6.​ (Optional) Touch the Exceptionsbutton, and select
+the item Exception that you want to define for a
+package.</p>
+    <p outputclass="p91">7.​ Touch the <image href="media/img(4).bmp"/>(Scan)
+icon to use the internal camera on the phone to scan each barcode.
+Or, use a Bluetooth Scannerto scan each barcode.</p>
+    <p outputclass="p91">8.​ Touch the <image href="media/img(5).bmp"/>icon to return to the Scanscreen.</p>
+    <p outputclass="p99">Note: To
+undo (delete) the last scan, touch Undo
+Last. The barcode number is
+removed.</p>
+    <p outputclass="p19">9.​ Touch Accept. Note:
+Skip this step if you are using a Bluetooth Scanner.</p>
+    <p outputclass="p91">10.​ To load items for the next stop, touch Next Stop, and repeat steps 4
+through 8 to scan items. If you want to load items for a stop that
+is notnext to the
+current stop, click the Load Scan: Select
+Stoptitle (as shown below), and select the
+stop (on the Stop Listscreen) for which you want to load items.</p>
+    <p outputclass="p98">
+      <image href="media/img(54).png"/>
+    </p>
+    <p outputclass="p91">11.​ When you touch Next
+Stopor Load Scan:
+Select Stop, the following message displays
+indicating the number of items that were scanned, and the number of
+items that were expected, as shown:</p>
+    <p outputclass="p100">
+      <image href="media/img(55).png"/>
+    </p>
+    <p outputclass="p101">12.​ If
+you scan an item that does notbelong to the current stop, the
+following message displays asking you if you want to accept the
+item as an overage on the current stop. If you accept the item as
+an overage on the current stop, no goods are moved. The load scan
+attaches to the goods, but the goods remain on the same
+stop.</p>
+    <p outputclass="p103">
+      <image href="media/img(56).png"/>
+    </p>
+    <p outputclass="p104">13.​ When
+you scan an overage on a stop, the following warning message
+displays, “This item does not belong to any stops. Do you
+want to accept this item as an overage?” If you touch
+Yes, new goods are created on the
+stop.</p>
+    <p outputclass="p103">
+      <image href="media/img(57).png"/>
+    </p>
+    <p outputclass="p106">14.​ After you have finished loading all goods on all stops,
+on the last stop, touch Next
+Stop. The Load
+Scanscreen appears, as shown:</p>
+    <p outputclass="p107">
+      <image href="media/img(58).png"/>
+    </p>
+    <p outputclass="p108">15.​ Touch Doneto submit the Load for the route.</p>
+    <p outputclass="p12">
+      <ph id="Toc99359024">InductionScan</ph>
+    </p>
+    <p outputclass="p13">The Induction Scanprocess includes
+3 steps:</p>
+    <p outputclass="p13">Step 1: Create an Induction Scan Group[DECS
+Administration]</p>
+    <p outputclass="p13">Step 2: Add an Induction Scan Groupto a
+Customer [DECS Administration]</p>
+    <p outputclass="p13">Step 3: Perform an Induction Scan
+in dxMobile</p>
+    <p outputclass="p72">
+      <ph id="Toc99359025">Step 1: Create anInduction Scan
+Group[DECS Administration]</ph>
+    </p>
+    <p outputclass="p73">To create an Induction Scan Group:</p>
+    <p outputclass="p26">1.​ In DECS Administration, go to Main Menu&gt; Distribution Menu &gt;Scan Customer Group
+Maintenance.The Scan Customer Group Maintenancewindow appears.</p>
+    <p outputclass="p26">1.​ Click the Add Scan Customer
+Grouplink, as shown:</p>
+    <p outputclass="p110">
+      <image href="media/img(59).png"/>
+    </p>
+    <p outputclass="p26">1.​ The Scan Customer Group
+Maintenancewindow appears, as
+shown:</p>
+    <p outputclass="p111">
+      <image href="media/img(60).png"/>
+    </p>
+    <p outputclass="p23">1.​ In the Name field, type “Induction Scan.”</p>
+    <p outputclass="p23">1.​ In the Audit Receive
+Scanfield, click the drop-down arrow and
+select Yesif you
+want to audit the Receive Scan. Otherwise, select No.</p>
+    <p outputclass="p112">1.​ In the Audit Induction
+Scanfield, click the drop-down arrow and
+select Yes.
+Note: The Induction Scanoption will
+display in dxMobile.</p>
+    <p outputclass="p26">1.​ Click Save.</p>
+    <p outputclass="p113">
+      <ph id="Toc99359026">Delete a Scan Group from a Customer</ph>
+    </p>
+    <p outputclass="p73">To delete a Scan Group from a
+Customer:</p>
+    <p outputclass="p114">​ On the Scan Customer Group
+Maintenancepage, click the <image href="media/img(61).png"/>(Delete) icon next to the Scan
+Customer Groupthat you want to delete, as
+shown:</p>
+    <p outputclass="p115">
+      <image href="media/img(62).png"/>
+    </p>
+    <p outputclass="p116">​ The Scan Customer
+Groupis removed from the Scan Customer Grouplist.</p>
+    <p outputclass="p90">
+      <ph id="Toc99359027">Step 2: Add anInduction Scan
+Groupto a Customer [DECS
+Administration]</ph>
+    </p>
+    <p outputclass="p117">To add an Induction
+Scan Groupto a Customer:</p>
+    <p outputclass="p26">1.​ In DECS Administration, go to Main Menu&gt; Customer Maintenance.
+The Customer Maintenancewindow appears.</p>
+    <p outputclass="p23">1.​ In the Account
+Numbercolumn, click the desired
+Account Number.
+The Edit Customerwindow appears.</p>
+    <p outputclass="p23">1.​ Click the Distributionlink. The
+Distribution Setupwindow
+appears. </p>
+    <p outputclass="p23">1.​ In the Scan Groupsection, click the drop-down arrow and select the
+Induction Scan Group.</p>
+    <p outputclass="p118">1.​ Click the Add Scan
+Grouplink. The Induction Scan Groupdisplays in
+the Scan Grouplist, as shown:</p>
+    <p outputclass="p34">
+      <image href="media/img(4).jpg"/>
+    </p>
+    <p outputclass="p119">1.​ Click Save.</p>
+    <p outputclass="p120">
+      <ph id="Toc99359028">Delete a Customer from aScan
+Group</ph>
+    </p>
+    <p outputclass="p73">To delete a Scan Group from a
+Customer:</p>
+    <p outputclass="p26">1.​ In DECS Administration, go to Main Menu&gt; Customer Maintenance.
+The Customer Maintenancewindow appears.</p>
+    <p outputclass="p23">2.​ In the Account
+Numbercolumn, click the desired
+Account Number.
+The Edit Customerwindow appears.</p>
+    <p outputclass="p23">3.​ Click the Distributionlink. The
+Distribution Setupwindow
+appears. </p>
+    <p outputclass="p26">4.​ In the Scan Groupsection, click the <image href="media/img(63).png"/> (Delete) icon next to the Scan
+Groupthat you want to delete, as
+shown:</p>
+    <p outputclass="p121">
+      <image href="media/img(64).png"/>
+    </p>
+    <p outputclass="p13">The Scan
+Groupis removed from the Scan Grouplist.</p>
+    <p outputclass="p122">
+      <ph id="Toc99359029">Step 3: Perform anInduction
+Scanin dxMobile</ph>
+    </p>
+    <p outputclass="p32">If a Driver is added to a Customer that has
+a Scan Groupdefined,
+the Scan Groupdisplays for
+Induction, Receive, Hold, and Release.</p>
+    <p outputclass="p123">Note: The
+Scan Groupdisplays for Receive, Hold,
+and Release regardless of the Audit Receive
+Scansetting (yes or no) in DECS
+Administration.</p>
+    <p outputclass="p124">Note: The
+Induction Scanoption only displays in
+dxMobile if the Audit Induction
+Scanfield is set to “Yes” in DECS
+Administration. (For more information, see Step 1: Create an Induction Scan
+Group).</p>
+    <p outputclass="p125">To perform an Induction Scan:</p>
+    <p outputclass="p26">1.​ In dxMobile, touch the <image href="media/img(65).png"/>(Menu)
+icon, and then touch Induction, as shown:</p>
+    <p outputclass="p126">
+      <image href="media/img(66).png"/>
+    </p>
+    <p outputclass="p45">2.​ The Induction Listscreen appears, as
+shown:</p>
+    <p outputclass="p127">
+      <image href="media/img(67).png"/>
+    </p>
+    <p outputclass="p50">2.​ Touch the desired account. The Inductionscreen appears, as
+shown:</p>
+    <p outputclass="p27">
+      <image href="media/img(68).png"/>
+    </p>
+    <p outputclass="p52">3.​ On
+the Inductionscreen, you
+can:</p>
+    <p outputclass="p128">​ Scan the
+items</p>
+    <p outputclass="p128">​ Set the item
+exceptions</p>
+    <p outputclass="p128">​ Undo the last
+scan</p>
+    <p outputclass="p128">​ Scan the
+overages</p>
+    <p outputclass="p129">​ View scanned and
+unscanned items.</p>
+    <p outputclass="p26">3.​ On the Inductionscreen, scan an overage. A list of Customers in
+the Scan Groupdisplays, as shown:</p>
+    <p outputclass="p110">
+      <image href="media/img(69).png"/>
+    </p>
+    <p outputclass="p26">4.​ Touch the Customer to whom you want to assign the
+goods.</p>
+    <p outputclass="p26">5.​ Repeat steps 2-3, until you have scanned all of the
+overages.</p>
+    <p outputclass="p23">6.​ Touch Done. An Information screen appears, as shown:</p>
+    <p outputclass="p34">
+      <image href="media/img(70).png"/>
+    </p>
+    <p outputclass="p130">Note: If the
+Induction Scanis performed
+withinthe branch, both Inductionand Receive Scansare generated with identical
+time stamps. If the Induction
+Scanis performed outsideof the branch, only Induction Scansare generated, and the
+branch generates Receive
+Scans.</p>
+    <p outputclass="p120">
+      <ph id="Toc99359030">ViewScan Eventsin Order Entry</ph>
+    </p>
+    <p outputclass="p125">To view Scan
+Eventsin Order Entry:</p>
+    <p outputclass="p26">1.​ In Order Entry, locate the desired order.</p>
+    <p outputclass="p26">2.​ Click the Packagebutton, as shown:</p>
+    <p outputclass="p131">
+      <image href="media/img(71).png"/>
+    </p>
+    <p outputclass="p26">3.​ The Package Dialogwindow appears, now click the desired
+package.</p>
+    <p outputclass="p26">4.​ Click the Scanbutton. The Scan
+Eventswindow appears, as shown:</p>
+    <p outputclass="p132">
+      <image href="media/img(5).jpg"/>
+    </p>
+    <p outputclass="p12">
+      <ph id="Toc99359031">Receive Scan</ph>
+    </p>
+    <p outputclass="p59">Use Receive Scanto record package
+barcodes that are received from the Customer.Receive Scanis typically
+performed by a dock worker.</p>
+    <p outputclass="p93">To perform a Receive Scan:</p>
+    <p outputclass="p23">1.​ On the Stop Summaryscreen, touch the <image href="media/img(72).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Receive, as shown:</p>
+    <p outputclass="p80">
+      <image href="media/img(73).png"/>
+    </p>
+    <p outputclass="p50">3.​ The Receivescreen appears, as shown:</p>
+    <p outputclass="p133">
+      <image href="media/img(74).png"/>
+    </p>
+    <p outputclass="p50">4.​ Touch the desired account. The ReceiveScanscreen appears, as
+shown:</p>
+    <p outputclass="p134">
+      <image href="media/img(75).png"/>
+    </p>
+    <p outputclass="p26">5.​ Touch the <image href="media/img(6).bmp"/>(Scan)
+icon.</p>
+    <p outputclass="p23">6.​ Scan a barcode.</p>
+    <p outputclass="p135">Note: If
+you are performing an audited Receive Scan, an information dialog
+box appears for routed and un-routed barcodes:</p>
+    <table outputclass="t1">
+      <tgroup cols="2">
+        <tbody>
+          <row outputclass="r1">
+            <entry outputclass="p136">Audited Receive Scan –
+Routed barcode</entry>
+            <entry outputclass="td5">
+              <p>Audited Receive Scan
+–</p>
+              <p>Un-routed barcode</p>
+            </entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p137">
+              <image href="media/img(76).png"/>
+            </entry>
+            <entry outputclass="p137">
+              <image href="media/img(77).png"/>
+            </entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p outputclass="p139">Note: You
+do not have to touch OKeach time you scan an item. You can continuously scan
+items, and the Info dialog box automatically refreshes and displays
+the information associated with the scanned barcode.</p>
+    <p outputclass="p23">7.​ Touch the <image href="media/img(7).bmp"/>icon to return to the Scanscreen.</p>
+    <p outputclass="p83">Note: To
+undo (delete) the last scan, touch Undo
+Last. The barcode number is
+removed.</p>
+    <p id="Hlt384546129" outputclass="p26">8.​ (Optional) In the Exceptionlist, touch the item
+Exception that you want to define for a package. For item Exception
+descriptions, see Excep<ph id="Hlt432452441">t</ph>ions.</p>
+    <p outputclass="p26">9.​ Touch Accept.</p>
+    <p outputclass="p23">10.​ Repeat steps 4-8 for each barcode that you want to
+scan.</p>
+    <p outputclass="p23">11.​ Touch Done.</p>
+    <p outputclass="p12">
+      <ph id="Toc99359032">Hold Scan</ph>
+    </p>
+    <p outputclass="p59">Use Hold
+Scanto record package barcodes that need to
+be held at the depot for a period of time. Hold Scanis typically performed
+by a dock worker.</p>
+    <p outputclass="p59">Note: To
+view the Holdoption in dxMobile, the Hold
+Scan option must be set to
+“Yes” in DECS
+Administration&gt; Customer Maintenance&gt;Distribution
+Setup&gt; Device
+Configuration &gt;Hold Scan.</p>
+    <p outputclass="p93">To perform a Hold Scan:</p>
+    <p outputclass="p23">1.​ On the Stop Summaryscreen, touch the <image href="media/img(78).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Hold, as shown:</p>
+    <p outputclass="p80">
+      <image href="media/img(79).png"/>
+    </p>
+    <p outputclass="p140">3.​ The HoldListscreen appears, as shown:</p>
+    <p outputclass="p81">
+      <image href="media/img(80).png"/>
+    </p>
+    <p outputclass="p50">4.​ Touch the desired account. The Holdscreen appears, as
+shown:</p>
+    <p outputclass="p134">
+      <image href="media/img(81).png"/>
+    </p>
+    <p outputclass="p26">5.​ Touch the Hold for
+Daystext box and enter the number of days
+for which you want to hold the scanned items.</p>
+    <p outputclass="p26">6.​ Touch the <image href="media/img(8).bmp"/>(Scan)
+icon.</p>
+    <p outputclass="p23">7.​ Scan a barcode.</p>
+    <p outputclass="p23">8.​ Touch the <image href="media/img(9).bmp"/>icon to return to the Scanscreen.</p>
+    <p outputclass="p83">Note: To
+undo (delete) the last scan, touch Undo. The barcode number is
+removed.</p>
+    <p outputclass="p26">9.​ (Optional) If you want to define an Exception for a
+package, touch Exceptions. In the Exceptionslist, touch an item Exception. For item Exception
+descriptions, see Exceptions.</p>
+    <p outputclass="p26">10.​ Touch Accept.</p>
+    <p outputclass="p141">11.​ A package validation check has been added upon scanning
+on HOLD. This
+gives the user more visibility if the scanned barcode is an overage
+or if it belongs to another customer etc.</p>
+    <p outputclass="p143">
+      <image href="media/img(82).png"/>
+    </p>
+    <p outputclass="p141">12.​ If a wrong barcode which does not belong to the customer
+is scanned, it notifies the driver that the package does not belong
+to the scan group as selected.</p>
+    <p outputclass="p141">13.​ The user can choose to Cancel or Accept the
+same.</p>
+    <p outputclass="p141">14.​ Repeat steps 4-9 for each barcode that you want to
+scan.</p>
+    <p outputclass="p141">15.​ Touch Done.</p>
+    <p outputclass="p12">
+      <ph id="Toc99359033">Consolidation Scan</ph>
+    </p>
+    <p outputclass="p73">Use Consolidation Scanto group held
+packages into one or more pallets. A palletis a collection of items
+that are for future delivery to a single stop, route, or Driver.
+They may also be items that are being held for other
+reasons.</p>
+    <p outputclass="p93">To perform a Consolidation Scan:</p>
+    <p outputclass="p23">1.​ On the Stop Summaryscreen, touch the <image href="media/img(83).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Consolidation, as shown:</p>
+    <p outputclass="p80">
+      <image href="media/img(84).png"/>
+    </p>
+    <p outputclass="p49">3.​ The ConsolidationListscreen appears, as shown:</p>
+    <p outputclass="p81">
+      <image href="media/img(85).png"/>
+    </p>
+    <p outputclass="p50">4.​ Touch the desired account. The Consolidationscreen appears, as
+shown:</p>
+    <p outputclass="p134">
+      <image href="media/img(86).png"/>
+    </p>
+    <p outputclass="p26">5.​ Touch the <image href="media/img(10).bmp"/>(Scan)
+icon.</p>
+    <p outputclass="p23">6.​ Scan a barcode.</p>
+    <p outputclass="p23">7.​ Touch the <image href="media/img(11).bmp"/>icon to return to the Scanscreen.</p>
+    <p outputclass="p83">Note: To
+undo (delete) the last scan, touch Undo. The barcode number is
+removed.</p>
+    <p outputclass="p26">8.​ (Optional) If you want to define an Exception for a
+package, touch Exceptions. In the Exceptionslist, touch an item Exception. For item Exception
+descriptions, see Exceptions.</p>
+    <p outputclass="p26">9.​ Touch Accept.</p>
+    <p outputclass="p23">10.​ Repeat steps 4-8 for each barcode that you want to
+scan.</p>
+    <p outputclass="p26">11.​ Touch Done. A Warningscreen appears, as shown:</p>
+    <p outputclass="p34">
+      <image href="media/img(87).png"/>
+    </p>
+    <p outputclass="p23">12.​ Touch Yes.</p>
+    <p outputclass="p12">
+      <ph id="Toc99359034">ReleaseScan</ph>
+    </p>
+    <p outputclass="p59">Use Release Scanto scan the package
+IDs of items that you want to release from the depot. Release Scanis typically
+performed by a dock worker.</p>
+    <p outputclass="p59">Note: To
+view the Releaseoption in dxMobile, the Release
+Scan option must be set to
+“Yes” in DECS
+Administration&gt; Customer Maintenance&gt;Distribution
+Setup&gt; Device
+Configuration &gt;Release Scan.</p>
+    <p outputclass="p93">To perform a Release Scan:</p>
+    <p outputclass="p23">1.​ On the Stop Summaryscreen, touch the <image href="media/img(88).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Release, as shown:</p>
+    <p outputclass="p80">
+      <image href="media/img(89).png"/>
+    </p>
+    <p outputclass="p144">3.​ The ReleaseListscreen appears, as shown:</p>
+    <p outputclass="p81">
+      <image href="media/img(90).png"/>
+    </p>
+    <p outputclass="p50">4.​ Touch the desired account. The Releasescreen appears, as
+shown:</p>
+    <p outputclass="p134">
+      <image href="media/img(91).png"/>
+    </p>
+    <p outputclass="p26">5.​ Touch the <image href="media/img(12).bmp"/>(Scan)
+icon.</p>
+    <p outputclass="p23">6.​ Scan a barcode.</p>
+    <p outputclass="p23">7.​ Touch the <image href="media/img(13).bmp"/>icon to return to the Scanscreen.</p>
+    <p outputclass="p83">Note: To
+undo (delete) the last scan, touch Undo. The barcode number is
+removed.</p>
+    <p outputclass="p26">8.​ (Optional) If you want to define an Exception for a
+package, touch Exceptions. In the Exceptionslist, touch an item Exception. For item Exception
+descriptions, see Exceptions.</p>
+    <p outputclass="p26">9.​ Touch Accept.</p>
+    <p outputclass="p23">10.​ Repeat steps 4-8 for each barcode that you want to
+scan.</p>
+    <p outputclass="p23">11.​ Touch Done.</p>
+    <p outputclass="p12">
+      <ph id="Toc99359035">Complete Stops on aRoute</ph>
+    </p>
+    <p outputclass="p93">At this point, all packages are
+loaded into your vehicle, and you are ready to leave the depot and
+begin your route.</p>
+    <p outputclass="p73">Perform the following steps to
+complete the stops on a route:</p>
+    <p outputclass="p26">1.​ Select an<ph id="Hlt358881693">d</ph>st<ph id="Hlt358881672">a</ph>
+      <ph id="Hlt432452463">r</ph>t a route</p>
+    <p outputclass="p26">2.​ HYPERLINK \l "_View_Stop_Details"View s<ph id="Hlt432452466">t</ph>
+      <ph id="Hlt358881816">o</ph>p<ph id="Hlt358881747"/>details</p>
+    <p outputclass="p26">3.​ Submit yo<ph id="Hlt358881829">u</ph>r s<ph id="Hlt432452472">t</ph>op <ph id="Hlt432452509">a</ph>rrival time</p>
+    <p outputclass="p26">4.​ Scan<ph id="Hlt358881836"/>pa<ph id="Hlt432452526">c</ph>k<ph id="Hlt358963617">a</ph>ges</p>
+    <p id="Hlt358881842" outputclass="p26">5.​ Ent<ph id="Hlt97241456">e</ph>r
+a<ph id="Hlt432452537"/>POD(if needed)</p>
+    <p outputclass="p26">6.​ Enter a <ph id="Hlt358881846">s</ph>i<ph id="Hlt432452548">g</ph>nature(if needed)</p>
+    <p outputclass="p26">7.​ Enter a<ph id="Hlt432452559"/>D<ph id="Hlt358881852">e</ph>livery Code(if needed)</p>
+    <p outputclass="p26">8.​ De<ph id="Hlt358881855">p</ph>ar<ph id="Hlt432452566">t</ph>a stop</p>
+    <p id="Select_and_Start" outputclass="p122">Select and Start a
+Route</p>
+    <p outputclass="p14">At the start of each day, routes
+that are assigned to you are sent to your phone. You must select
+and start the route that you want to complete.</p>
+    <p outputclass="p14">Note: Your
+phone receives updates every minute.</p>
+    <p outputclass="p79">To select and start a
+route:</p>
+    <p outputclass="p26">1.​ On the Stop Summaryscreen, touch the desired route, as shown:</p>
+    <p outputclass="p145">
+      <image href="media/img(92).png"/>
+    </p>
+    <p outputclass="p26">2.​ The Stop Listscreen displays a list of stops defined for the route,
+as shown:</p>
+    <p outputclass="p146">
+      <image href="media/img(93).png"/>
+    </p>
+    <p outputclass="p147">3.​ Touch Start. If the LoadScanoption is enabled for a route (in DECS Administration&gt;
+Customer Maintenance&gt; Distribution
+Setup&gt; Device
+Configurationsection), you are required to
+sign for the route. The Sign for
+Routescreen appears, as shown:</p>
+    <p outputclass="p34">
+      <image href="media/img(94).png"/>
+    </p>
+    <p outputclass="p30">4.​ Enter a signature.</p>
+    <p outputclass="p30">5.​ Touch Submitto start the route. The signature and the depot depart
+time are sent to DECS.</p>
+    <p outputclass="p52">6.​ If
+the Load Scanoption is
+disabled in DECS Administration, the Start
+Routescreen appears indicating that you are leaving
+the depot and are about to start a route, as shown below.
+Touch Submitto start the
+route.</p>
+    <p outputclass="p148">
+      <image href="media/img(95).png"/>
+    </p>
+    <p id="Submit_Your_Pickup" outputclass="p149">Stop Type
+Codes</p>
+    <p outputclass="p150">1.​ To the right of the stop number, a stop code (a letter)
+displays that indicates the type of stop, as shown:</p>
+    <p outputclass="p151">
+      <image href="media/img(96).png"/>
+    </p>
+    <p outputclass="p91">2.​ The table below describes the Stop Type
+Codes:</p>
+    <table outputclass="t1">
+      <tgroup cols="2">
+        <tbody>
+          <row>
+            <entry outputclass="p152">Stop Type Code</entry>
+            <entry outputclass="p152">Description</entry>
+          </row>
+          <row outputclass="r3">
+            <entry outputclass="p153">E</entry>
+            <entry outputclass="p153">A depot stop.</entry>
+          </row>
+          <row outputclass="r3">
+            <entry outputclass="p153">P</entry>
+            <entry outputclass="p153">A pickup stop.</entry>
+          </row>
+          <row outputclass="r4">
+            <entry outputclass="p153">D</entry>
+            <entry outputclass="p153">A delivery stop.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p id="Ref187724555" outputclass="p154">
+      <ph id="Toc99359038">Stop Status</ph>Codes</p>
+    <p outputclass="p155">To the right of each stop, a
+status code (a letter) displays that represents the current status
+of the stop, as shown:</p>
+    <p outputclass="p151">
+      <image href="media/img(97).png"/>
+    </p>
+    <p outputclass="p79">The table below describes the Stop
+Status Codes:</p>
+    <table outputclass="t1">
+      <tgroup cols="2">
+        <tbody>
+          <row>
+            <entry outputclass="p152">Stop Status Code</entry>
+            <entry outputclass="p152">Description</entry>
+          </row>
+          <row outputclass="r3">
+            <entry outputclass="p153">O</entry>
+            <entry outputclass="p153">Indicates that the stop is open and pending.
+When a stop has this status, it means that the Driver has not yet
+viewed the stop. An “O” displays when using theShow All Stops,Show Pending, andShow New Stopsfilters.</entry>
+          </row>
+          <row outputclass="r3">
+            <entry outputclass="p153">V</entry>
+            <entry outputclass="p153">Indicates that the Driver has viewed the
+stop. A “V” displays when using theShow All StopsandShow Pendingfilters.</entry>
+          </row>
+          <row outputclass="r4">
+            <entry outputclass="p153">A</entry>
+            <entry outputclass="p153">Indicates that the Driver has arrived at a
+stop. The stop has anArrivestatus. An “A” displays
+when using theShow All
+StopsandShow
+Pendingfilters.</entry>
+          </row>
+          <row outputclass="r5">
+            <entry outputclass="p153">C</entry>
+            <entry outputclass="p153">Indicates that the Driver has completed the
+stop. When a stop is in this status, you can go back and review the
+stop details. To make a change to the stop, you must first perform
+anUndo Departure. This
+changes the status back toArrive. A “C” displays when
+using theShow
+Completedfilter.</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">E</entry>
+            <entry outputclass="p153">Indicates that the Driver has entered an
+exception for the stop. This means that the stop has a
+“Damaged” or “Refused” exception defined.
+An “E” displays when using theShow Exceptionfilter.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p id="View_Stop_Details" outputclass="p2"/>
+    <p outputclass="p156">
+      <ph id="Toc99359039">View Stop Details</ph>
+    </p>
+    <p outputclass="p79">To view stop details:</p>
+    <p outputclass="p91">1.​ On the Stop Listscreen, touch the desired stop whose details you want to
+view, as shown:</p>
+    <p outputclass="p157">
+      <image href="media/img(98).png"/>
+    </p>
+    <p outputclass="p91">2.​ The Stop Detailscreen appears, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(99).png"/>
+    </p>
+    <p outputclass="p116">​ The Stop details display and include the Order Number, Address, Contact Number, Service, Vehicle, Time, Branch, References, andSpecial Instructions.</p>
+    <p id="Submit_Your_Stop_1" outputclass="p72">Submit Your
+Stop Arrival Time</p>
+    <p outputclass="p79">When you arrive at a stop, you must
+submit your Arrival Time.</p>
+    <p outputclass="p158">​ To submit your Arrival
+Time:</p>
+    <p outputclass="p91">1.​ On the Stop Detailscreen, touch the <image href="media/img(100).png"/>(Arrive) icon, as shown:</p>
+    <p outputclass="p159">
+      <image href="media/img(101).png"/>
+    </p>
+    <p outputclass="p19">2.​ Or, touch the <image href="media/img(102).png"/>(Menu)icon, and then touch
+Manual Arrive.</p>
+    <p outputclass="p91">3.​ The Arrival Timedisplays on the Stop
+Detailscreen in the Actualfield, as
+shown:</p>
+    <p outputclass="p159">
+      <image href="media/img(103).png"/>
+    </p>
+    <p outputclass="p76">Undo a Stop Arrival</p>
+    <p outputclass="p160">To undo a stop arrival:</p>
+    <p outputclass="p26">1.​ On the Stop Detailscreen, touch the <image href="media/img(104).png"/>(Undo)
+icon, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(105).png"/>
+    </p>
+    <p outputclass="p26">2.​ Or, touch the <image href="media/img(106).png"/>(Menu)icon, and then touch
+Undo Arrive.</p>
+    <p outputclass="p26">3.​ The Informationscreen appears asking “Undo arrive?” as
+shown:</p>
+    <p outputclass="p60">
+      <image href="media/img(107).png"/>
+    </p>
+    <p outputclass="p26">4.​ Touch Yesto undo the stop arrival.</p>
+    <p id="Scan_Packages" outputclass="p72">Scan Packages</p>
+    <p outputclass="p161">If your Android device is not
+connected to an external scanner, follow the steps below to scan
+packages.</p>
+    <p outputclass="p162">Note: You
+must submit an arrival time before the <image href="media/img(14).bmp"/>(Scan)
+icon will display. (See Submit
+Your<ph id="Hlt358882075"/>Stop <ph id="Hlt432452581">A</ph>rrival Timefor instructions).</p>
+    <p outputclass="p79">To scan packages:</p>
+    <p outputclass="p26">1.​ On the Stop Detailscreen, scroll down to the Scan section, and touch
+the <image href="media/img(15).bmp"/>(Scan)
+icon, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(108).png"/>
+    </p>
+    <p outputclass="p23">2.​ The Scanscreen appears.</p>
+    <p outputclass="p163">
+      <image href="media/img(109).png"/>
+    </p>
+    <p outputclass="p26">3.​ Touch the <image href="media/img(16).bmp"/>(Scan)
+icon.</p>
+    <p outputclass="p23">4.​ Scan a barcode.</p>
+    <p outputclass="p23">5.​ Touch the <image href="media/img(17).bmp"/>icon to return to the Scanscreen.</p>
+    <p outputclass="p83">Note: To
+undo (delete) the last scan, touch Undo. The barcode number is
+removed.</p>
+    <p outputclass="p23">6.​ (Optional) In the Exceptionlist, touch the item
+Exception that you want to define for a package. For item Exception
+descriptions, see Exceptions.</p>
+    <p outputclass="p26">7.​ Touch Accept.</p>
+    <p outputclass="p23">8.​ Repeat steps 2-6 for each barcode that you want to
+scan.</p>
+    <p outputclass="p164">Note:
+Touch the <image href="media/img(110).png"/>(Return) icon to return to the Stop
+Detailscreen.</p>
+    <p outputclass="p113">
+      <ph id="Toc99359042">Un-scanned Items List</ph>
+    </p>
+    <p outputclass="p73">To view the Un-scanned Itemslist:</p>
+    <p>1.​ On the Scanscreen, touch the <image href="media/img(111).png"/>(Menu)icon, and then
+touch</p>
+    <p>
+Un-scanned Items List.
+The Un-scanned Itemslist appears, as shown:</p>
+    <p outputclass="p60">
+      <image href="media/img(112).png"/>
+    </p>
+    <p outputclass="p23">2.​ Touch an un-scanned item to view it on the Scanscreen.</p>
+    <p outputclass="p165">
+      <ph id="Toc99359043">Scanned Items List</ph>
+    </p>
+    <p outputclass="p93">To view the Scanned Itemslist:</p>
+    <p outputclass="p26">1.​ On the Scanscreen, touch the <image href="media/img(113).png"/>(Menu)icon, and then touch
+Scanned Items List.
+The Scanned Itemslist appears, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(114).png"/>
+    </p>
+    <p outputclass="p26">2.​ Touch a scanned item to view it on the Scanscreen.</p>
+    <p outputclass="p166">
+      <ph id="Toc99359044">Special Case</ph>
+    </p>
+    <p outputclass="p167">Item Exceptions for Un-Scanned
+Packages</p>
+    <p outputclass="p153">A new feature has been added which
+does not allow the driver to depart without scanning or accounting
+for all packages on a stop. On delivery scan if package barcode is
+not available, the driver has the option of putting an item
+exception for the un-scanned barcode.</p>
+    <p outputclass="p116">-​ <ph id="Hlk86676583">The
+below scenario explains
+the feature:</ph>
+    </p>
+    <p outputclass="p13">Say there are 3 packages to be
+scanned on a stop, but only 1 package is available for the scanning
+then the other 2 packages should be set with item
+exceptions.</p>
+    <p outputclass="p13">
+      <ph id="Hlk86676598">Setting on DECS Administration&gt; Exception
+Maintenance</ph>
+    </p>
+    <p outputclass="p116">-​ If a stop has expected package(s) and the Delivery
+Attempt on Item Exception is set to true, then this feature is
+enabled.</p>
+    <p outputclass="p168">
+      <ph id="Hlk86676605">
+        <image href="media/img(115).png"/>
+      </ph>
+    </p>
+    <p outputclass="p169">(i)​ <ph id="Hlk86676637">On SCAN
+screen, POD/UPDATE/ DEPART is disabled. It will not be enabled
+until all packages have been accounted for. The driver scans one
+package, then dxMobile will not let the driver either to
+Update, POD or
+Depart, and is forced to
+click on “Done” tab.</ph>
+    </p>
+    <p outputclass="p170">
+      <image href="media/img(116).png"/>
+    </p>
+    <p outputclass="p169">(ii)​ <ph id="Hlk86676728">When the driver clicks on “Done”, they are
+presented with the screen, where they can select the Item Exception
+for unscannable packages and submit.</ph>
+    </p>
+    <p outputclass="p115">
+      <image href="media/img(117).png"/>
+    </p>
+    <p outputclass="p169">(iii)​ <ph id="Hlk86676779">After the exceptions are submitted, the driver is
+notified of all the packages are being accounted for, with which he
+will be able to proceed to Depart. The POD/UPDATE/DEPARTgets enabled
+after all packages have been accounted for.</ph>
+    </p>
+    <p outputclass="p170">
+      <image href="media/img(118).png"/>
+    </p>
+    <p id="Improvements_2" outputclass="p170"/>
+    <p outputclass="p72">
+      <ph id="Toc99359045">Enter a POD/Signature</ph>
+    </p>
+    <p outputclass="p13">If you are completing a pickup
+stop, you do not need to enter a POD or signature, go to
+Depa<ph id="Hlt432452587">r</ph>t a Stop.</p>
+    <p outputclass="p13">If you are completing a delivery
+stop, follow the instructions in the En<ph id="Hlt432452596">t</ph>er a PODand Enter a<ph id="Hlt432452603"/>Signaturesections
+below.</p>
+    <p id="Depart_a_Stop" outputclass="p113">Enter a
+POD</p>
+    <p outputclass="p173">Note: You must submit an arrival
+time before the <image href="media/img(18).bmp"/>(Sign) icon will display.(See Submit Your Stop <ph id="Hlt432452611">A</ph>rrival Timefor instructions).</p>
+    <p outputclass="p73">To enter a POD:</p>
+    <p outputclass="p26">1.​ On the Stop Detailscreen, scroll down to the Sign section, and touch
+the <image href="media/img(119).png"/>(Signature) icon, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(120).png"/>
+    </p>
+    <p outputclass="p174">The Signaturescreen
+appears.</p>
+    <p outputclass="p157">
+      <image href="media/img(121).png"/>
+    </p>
+    <p outputclass="p26">2.​ In the PODfield, type the POD
+Name.</p>
+    <p outputclass="p26">3.​ Touch Done.</p>
+    <p outputclass="p23">4.​ Touch the <image href="media/img(122).png"/>(Return) icon to return to the Stop
+Detailscreen.</p>
+    <p id="Enter_a_Signature" outputclass="p113">Enter a
+Signature</p>
+    <p outputclass="p93">If the delivery stop requires a
+signature, you can allow the Customer to sign your device’s
+screen or you can take a picture of the Customer’s
+signature.</p>
+    <p outputclass="p76">Allow a Customer to Sign Your
+Device Screen</p>
+    <p outputclass="p73">To allow the Customer to sign your
+device’s screen:</p>
+    <p outputclass="p23">1.​ On the Signaturescreen, in the Signaturesection, allow the
+Customer to sign the screen, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(123).png"/>
+    </p>
+    <p outputclass="p175">2.​ Touch the <image href="media/img(124).png"/>(Return) icon to return to the Stop
+Detailscreen.</p>
+    <p outputclass="p76">Take a Picture of a
+Customer’s Signature</p>
+    <p outputclass="p73">To take a picture of a
+Customer’s signature:</p>
+    <p outputclass="p23">1.​ On the Signaturescreen, in the Signaturesection, touch
+the Cameraicon, as
+shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(125).png"/>
+    </p>
+    <p outputclass="p23">2.​ The camera displays.</p>
+    <p outputclass="p26">3.​ Take a picture of the Customer’s signature.
+The Signaturescreen appears and displays the picture of the
+Customer’s signature, as shown:</p>
+    <p outputclass="p60">
+      <image href="media/img(126).png"/>
+    </p>
+    <p outputclass="p176">4.​ Touch the <image href="media/img(127).png"/>(Return) icon to return to the Stop
+Detailscreen.</p>
+    <p outputclass="p76">Clear a Signature</p>
+    <p outputclass="p125">To clear a signature:</p>
+    <p outputclass="p177">​ On the Signaturescreen, touch theTrash
+Can icon, as shown:</p>
+    <p outputclass="p53">
+      <image href="media/img(128).png"/>
+    </p>
+    <p outputclass="p116">​ The Signaturesection is cleared.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359048">ForceCaptureof Signature/Deliver Image
+for theDelivery</ph>
+    </p>
+    <p outputclass="p153">A new flag POD Image has been
+added in the customer device configuration. There are 3 scenarios
+as explained below for this feature:</p>
+    <p outputclass="p180">​ <ph id="Hlk86675545">If POD Image
+flag is set to “Not
+required”, then Signature and POD are
+not required, the driver will be able to procced to Depart without
+signature/POD.</ph>
+    </p>
+    <p outputclass="p182">
+      <ph id="Hlk86675552">
+        <image href="media/img(129).png"/>
+      </ph>
+    </p>
+    <p outputclass="p180">​ <ph id="Hlk86675566">If
+the POD Image flag is set
+to “Signature required or Delivery
+image required”- it won't force the
+driver to put Signature or POD, it will only show the warning
+message, but the driver can proceed to Depart.</ph>
+    </p>
+    <p outputclass="p180">​ If POD Image is set to “Delivery Image Only”- It
+will force the driver to Capture the POD image. Once the POD image
+is captured, the driver can save the Image and will be able to
+proceed for Depart</p>
+    <p outputclass="p184">
+      <image href="media/img(130).png"/>
+    </p>
+    <p outputclass="p166">
+      <ph id="Toc99359049">OverageOrderCreation uponScanning on DEPART</ph>
+    </p>
+    <p outputclass="p153">A new flag has been added in DECS
+Administration &gt; Device Configuration that lets you create new
+order creation on overage scanning. If set to yes, and driver scans
+an overage, selects the customer, and DEPARTS then DECS creates the
+overage order for another customer.</p>
+    <p outputclass="p153">On DECS Administration &gt; Device
+Configuration, a flag has been added to allow overage order
+creation:</p>
+    <p outputclass="p180">​ Case: Allow Overage Order
+Creationflag is set as “No”</p>
+    <p outputclass="p182">
+      <image href="media/img(131).png"/>
+    </p>
+    <p outputclass="p181">On DEPART screen:</p>
+    <p outputclass="p91">1.​ Touch the <image href="media/img(19).bmp"/>(Scan)
+icon to use the internal camera on the phone to scan each barcode.
+Or, use a Bluetooth Scannerto scan each barcode.</p>
+    <p outputclass="p185">2.​ Touch the <image href="media/img(20).bmp"/>icon to return to the Scanscreen.</p>
+    <p outputclass="p168">
+      <image href="media/img(132).png"/>
+    </p>
+    <p outputclass="p153">Note:If
+the scanned package belongs to another stop on the same route,
+dxMobile prompts the message “Package does not belong to the current
+stop”and will not let the driver to
+scan the package.</p>
+    <p outputclass="p186">
+      <image href="media/img(133).png"/>
+    </p>
+    <p outputclass="p180">​ If Allow Overage Order
+Creationflag is “Yes”</p>
+    <p outputclass="p181">On DEPART screen:</p>
+    <p outputclass="p91">1.​ Touch the <image href="media/img(21).bmp"/>(Scan)
+icon to use the internal camera on the phone to scan each barcode.
+Or, use a Bluetooth Scannerto scan each barcode.</p>
+    <p outputclass="p187">2.​ Touch the <image href="media/img(22).bmp"/>icon to return to the Scanscreen</p>
+    <p outputclass="p180">​ The dxMobile shows the list of other customer(s) (only
+those customers to whom flag is set to Yes on DECS side). If driver
+selects another customer, then on DEPART DECS creates an Overage
+order.</p>
+    <p outputclass="p182">
+      <image href="media/img(134).png"/>
+    </p>
+    <p outputclass="p180">-​ After the driver DEPARTS from the stop, then behind the
+scenes an overage on-demand order is created for the
+customer.</p>
+    <p id="Enter_a_Delivery" outputclass="p72">Enter a Delivery
+Code</p>
+    <p outputclass="p93">If you are required to enter
+a Delivery Codefor
+a stop, you can enter it on the Signaturescreen.</p>
+    <p outputclass="p13">Note:
+Delivery Code options are only available if a Delivery Code Profileis defined
+in DECS Administration. (DECS
+Administration&gt; Customer Maintenance&gt;
+Distribution Setup&gt; Delivery Code
+Profilefield.</p>
+    <p outputclass="p73">To enter a Delivery Code:</p>
+    <p outputclass="p26">1.​ On the Stop Detailscreen, scroll down to the Sign section, and touch
+the <image href="media/img(135).png"/>(Signature) icon, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(136).png"/>
+    </p>
+    <p outputclass="p26">2.​ The Signaturescreen appears.</p>
+    <p outputclass="p58">
+      <image href="media/img(137).png"/>
+    </p>
+    <p outputclass="p26">3.​ Touch the Delivery
+Codefield, the Delivery Codescreen appears and
+displays the Delivery Codeoptions, as shown:</p>
+    <p outputclass="p188">
+      <image href="media/img(138).png"/>
+    </p>
+    <p outputclass="p30">4.​ Touch a Delivery
+Code.</p>
+    <p outputclass="p23">5.​ Touch the <image href="media/img(139).png"/>(Return) icon to return to the Stop
+Detailscreen.</p>
+    <p id="Depart_a_Stop_1" outputclass="p72">Depart a
+Stop</p>
+    <p outputclass="p173">Note: You
+must submit an arrival time before the <image href="media/img(23).bmp"/>(Depart) icon will display. (See Submit
+Your <ph id="Hlt432452662">S</ph>top Arri<ph id="Hlt432452490">v</ph>al Timefor instructions).</p>
+    <p outputclass="p189">To depart a stop:</p>
+    <p outputclass="p26">1.​ On the Stop Detailscreen, scroll down to the Depart section, and touch
+the <image href="media/img(24).bmp"/>(Depart) icon, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(140).png"/>
+    </p>
+    <p outputclass="p26">2.​ The Departscreen appears, as shown:</p>
+    <p outputclass="p190">
+      <image href="media/img(141).png"/>
+    </p>
+    <p outputclass="p49">3.​ Touch Submit.</p>
+    <p outputclass="p76">Undo a Departure</p>
+    <p outputclass="p73">To undo a departure:</p>
+    <p outputclass="p191">​ On the Stop Detailscreen, scroll down to the UndoDepart section, and touch
+the <image href="media/img(142).png"/>(UndoDepart)
+icon, as shown:</p>
+    <p outputclass="p192">
+      <image href="media/img(143).png"/>
+    </p>
+    <p outputclass="p135">Or, on the Stop Detailscreen, touch
+the <image href="media/img(144).png"/>(Menu)icon, and then touch
+Undo Departure, as
+shown:</p>
+    <p outputclass="p193">
+      <image href="media/img(145).png"/>
+    </p>
+    <p id="OLE_LINK9" outputclass="p12">Exceptions</p>
+    <p outputclass="p93">Exceptions may occur when packages
+are picked up or delivered. There are two types of
+exceptions: Stop Exceptionsand Item Exceptions.</p>
+    <p outputclass="p93">Stop Exceptionsare reasons why you were not able to arrive at a stop,
+or you were not able to pick up or deliver packages.</p>
+    <p outputclass="p13">Item Exceptionsare related to packages.</p>
+    <p outputclass="p13">For example “Damage” is
+used if a package is damaged, or “Refused” is used if a
+Customer refuses to accept the package.</p>
+    <p outputclass="p13">The table on the next page
+describes standard Stop
+Exceptionsand Item
+Exceptions.</p>
+    <p outputclass="p13">Note:
+Exceptions vary by Customer, so you may have fewer or different
+exceptions available on your device.</p>
+    <table outputclass="t1">
+      <tgroup cols="2">
+        <colspec colname="col1" colnum="1"/>
+        <colspec colname="col2" colnum="2"/>
+        <tbody>
+          <row outputclass="r1">
+            <entry nameend="col2" namest="col1" outputclass="p152">Delivery/Pickup Stop
+Exceptions</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Bad Address</entry>
+            <entry outputclass="p153">Un-able to arrive at the stop due to an
+incorrect address</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Broken Lock</entry>
+            <entry outputclass="p153">Un-able to gain access to the delivery
+location</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Customer Misroute</entry>
+            <entry outputclass="p153">Un-able to arrive at the stop, because the
+Customer provided in-correct route information</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Delivered Damaged</entry>
+            <entry outputclass="p153">All packages were delivered with
+damage</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Equipment</entry>
+            <entry outputclass="p153">Un-able to arrive at the stop, because the
+Driver’s vehicle broke down</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Holiday</entry>
+            <entry outputclass="p153">Un-able to delivery packages to the stop,
+because it was a holiday</entry>
+          </row>
+          <row>
+            <entry outputclass="p153">Inbound Delay</entry>
+            <entry outputclass="p153">Delivered packages to the stop late, because
+the packages arrived late to the Distribution Center</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Misrouted</entry>
+            <entry outputclass="p153">Un-able to arrive at the stop, because the
+Driver had in-correct route information</entry>
+          </row>
+          <row>
+            <entry outputclass="p153">No Access</entry>
+            <entry outputclass="p153">Un-able to arrive at the stop, because the
+Driver did not have access to the delivery location</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">No Receiver</entry>
+            <entry outputclass="p153">Un-able to delivery packages to the stop,
+because the receiver was not available to receive them</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Out of Receiving Space</entry>
+            <entry outputclass="p153">The delivery location is not able to receive
+the packages due to lack of space</entry>
+          </row>
+          <row>
+            <entry outputclass="p153">Refused</entry>
+            <entry outputclass="p195">Un-able to complete the stop, because all
+packages were refused by the Customer for a reason other than
+damage</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Refused Damaged</entry>
+            <entry outputclass="p153">Un-able to complete the stop, because all
+packages were refused by the Customer due to damage</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Signature</entry>
+            <entry outputclass="p153">Un-able to deliver packages to the stop,
+because no one was there to sign for the packages</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Traffic</entry>
+            <entry outputclass="p153">Un-able to arrive at the stop due to
+traffic</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Weather</entry>
+            <entry outputclass="p153">Un-able to arrive at the stop due to
+inclement weather</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Wrong Delivery</entry>
+            <entry outputclass="p153">The packages that the Driver attempted to
+deliver were not intended for the delivery location</entry>
+          </row>
+          <row outputclass="r1">
+            <entry nameend="col2" namest="col1" outputclass="p152">Delivery/Pickup Item
+Exceptions</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Damage</entry>
+            <entry outputclass="p153">One or more packages are damaged</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Overage</entry>
+            <entry outputclass="p153">Additional packages exist over the expected
+number of packages</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Refused</entry>
+            <entry outputclass="p153">The Customer refused the package</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p153">Refused Damaged</entry>
+            <entry outputclass="p153">The Customer refused the package, because of
+damage</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p outputclass="p154">
+      <ph id="Toc99359053">Stop Exceptions</ph>
+    </p>
+    <p outputclass="p93">You can define an Exception for a
+stop, and undo an Exception from a stop.</p>
+    <p outputclass="p20">Define a Stop Exception</p>
+    <p outputclass="p73">Note: You
+must enter a Stop Exception before you submit an arrival time for
+the stop.</p>
+    <p outputclass="p196">To define an Exception for a
+stop:</p>
+    <p outputclass="p26">1.​ On the Stop Detailscreen, touch the <image href="media/img(146).png"/>(Exception) icon, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(147).png"/>
+    </p>
+    <p outputclass="p26">2.​ The Exceptionscreen appears, as shown:</p>
+    <p outputclass="p157">
+      <image href="media/img(148).png"/>
+    </p>
+    <p outputclass="p26">3.​ Touch a Stop Exception that you want to define for the
+stop.</p>
+    <p outputclass="p26">4.​ An Informationscreen appears, as shown:</p>
+    <p outputclass="p197">
+      <image href="media/img(149).png"/>
+    </p>
+    <p outputclass="p23">5.​ Touch Yes.</p>
+    <p outputclass="p20">Undo a Stop Exception</p>
+    <p outputclass="p198">You can undo a Stop Exception that
+is defined for stop.</p>
+    <p outputclass="p73">To undo a Stop
+Exception:</p>
+    <p outputclass="p199">​ On the Stop Detailscreen (for a stop that has an Exception defined), touch
+the <image href="media/img(150).png"/>(Exception) icon, as shown:</p>
+    <p outputclass="p157">
+      <image href="media/img(151).png"/>
+    </p>
+    <p outputclass="p19">​ Or, on the Stop
+Detailscreen, touch the <image href="media/img(152).png"/>(Menu)icon, and then touch
+Undo Exception.</p>
+    <p outputclass="p116">​ The Exception is no longer defined for the
+stop.</p>
+    <p outputclass="p2">
+      <ph id="Hlk86675418">ForceCaptureImageonStopException/Attempt</ph>
+    </p>
+    <p outputclass="p200">A new featureForce
+Capture Image on Stop Exception has been added. This
+feature requires the driver to capture the Image of the Stop
+exception along with the Stop Exception Code.</p>
+    <p outputclass="p201">
+      <ph id="Hlk86675449">
+        <image href="media/img(153).png"/>
+      </ph>
+    </p>
+    <p outputclass="p2">Note:This applies to
+only those exceptions for which Delivery
+Attempt = Yes. If the Delivery
+Attempt = No, then driver can enter the Stop Exception
+code, but there is no need to capture the image.</p>
+    <p outputclass="p91">1.​ On the Stop Detailscreen, touch the <image href="media/img(154).png"/>(Exception) icon, as shown. Touch the Stop Exception that you want
+to define for the stop.</p>
+    <p outputclass="p202">
+      <image href="media/img(155).png"/>
+    </p>
+    <p id="Hlk86675455" outputclass="p2"/>
+    <p outputclass="p91">2.​ An Informationscreen appears, as shown below:</p>
+    <p outputclass="p203">
+      <image href="media/img(156).png"/>
+    </p>
+    <p outputclass="p91">3.​ Click Yesand the Camera will be engaged.</p>
+    <p outputclass="p204">
+      <image href="media/img(157).png"/>
+    </p>
+    <p outputclass="p2">The driver has the option to Save the image by
+clicking “OK” and
+proceed further or else a “Reset” option is given, if the image
+is not being captured properly.</p>
+    <p outputclass="p76">Late Stop Exceptions</p>
+    <p outputclass="p93">When departing a stop, if you are
+required to enter a Late Stop
+Exceptionand your actual depart time is
+later than the expected depart time, the text “You are
+Late” displays, and you must define a Late Stop Exception.</p>
+    <p outputclass="p63">Note: Late Stop
+Exceptionsare only required if the
+“Require Late Exception” option is enabled in DECS
+Administration. (DECS
+Administration&gt; Customer Maintenance&gt;
+Edit Customer&gt;
+Service Tab &gt; Require Late
+Exceptionfield).</p>
+    <p outputclass="p63">To define a Late Stop Exception:</p>
+    <p outputclass="p26">1.​ On the Stop Detailscreen, scroll down to the Depart section, and touch
+the <image href="media/img(25).bmp"/>(Depart) icon, as shown:</p>
+    <p outputclass="p60">
+      <image href="media/img(158).png"/>
+    </p>
+    <p outputclass="p26">2.​ The Departscreen appears, as shown:</p>
+    <p outputclass="p26">3.​ The Departscreen appears, as shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(159).png"/>
+    </p>
+    <p outputclass="p50">4.​ In the Actual
+Departfield, the current time is displayed.
+If you want to change the actual depart time, type the time
+(HH:MM).</p>
+    <p outputclass="p50">5.​ In the Late Stop
+Exceptionlist, select a Late Stop
+Exception.</p>
+    <p outputclass="p23">6.​ Touch Submit.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359054">ItemExceptions</ph>
+    </p>
+    <p outputclass="p13">You can add an Item Exception, and
+undo an Item Exception. For information on how to do this,
+see Scan P<ph id="Hlt97240751">ac</ph>
+      <ph id="Hlt358882052">kages</ph>.</p>
+    <p outputclass="p149">
+      <ph id="Toc99359055">Filter the Stop List</ph>
+    </p>
+    <p outputclass="p79">The following filter options allow
+you to view specific stops on the Stop
+Listscreen:</p>
+    <p id="Hlt10038603" outputclass="p205">​ Location Scan</p>
+    <p outputclass="p206">​ Search</p>
+    <p outputclass="p206">​ Show A<ph id="Hlt354995507">ll Stops</ph>
+    </p>
+    <p outputclass="p206">​ Show Pe<ph id="Hlt354995530">nding</ph>
+    </p>
+    <p outputclass="p206">​ Show Completed</p>
+    <p outputclass="p206">​ Sho<ph id="Hlt354995561">w Exception</ph>
+    </p>
+    <p outputclass="p206">​ <ph id="Location_Scan_1">Display Stop Name</ph>
+    </p>
+    <p outputclass="p206">​ Display Stop Addr</p>
+    <p outputclass="p90">
+      <ph id="Toc99359056">Location Scan</ph>
+    </p>
+    <p outputclass="p13">Some Customers require you to
+perform a Location Scanwhen you arrive at a stop. The Location Scanfeature allows you
+to scan a location barcode.</p>
+    <p outputclass="p13">You can search for a stop by using
+the Location Codeassigned to the stop. After you scan the location
+barcode, the matching stop displays in the Stop List. You can
+access the Location Scanfeature from the Stop
+Summaryscreen and the Stop Listscreen.</p>
+    <p outputclass="p13">Note:
+The Location Scanfeature is only available if it is enabled in DECS
+Administration. (In DECS
+Administration&gt; Customer Maintenance&gt;
+Distribution Setup,
+the Location Scanfield must be set to Yes).</p>
+    <p outputclass="p73">To scan a location
+barcode:</p>
+    <p outputclass="p23">1.​ On the Stop List screen,touch the <image href="media/img(160).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Location Scan, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(161).png"/>
+    </p>
+    <p outputclass="p207">3.​ Scan the location barcode.</p>
+    <p outputclass="p26">4.​ Touch the <image href="media/img(26).bmp"/>icon to return to the Stop
+Listscreen.</p>
+    <p outputclass="p76">
+      <ph id="Show_All_Stops">Search</ph>
+    </p>
+    <p outputclass="p13">You can search for a stop by
+Manifest.</p>
+    <p outputclass="p73">To search for a stop:</p>
+    <p outputclass="p23">1.​ On the Stop List screen,touch the <image href="media/img(162).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Search, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(163).png"/>
+    </p>
+    <p outputclass="p26">3.​ The Searchscreen appears, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(164).png"/>
+    </p>
+    <p outputclass="p26">4.​ Enter a Manifest
+Code.</p>
+    <p outputclass="p26">5.​ TouchGoTo. The stop that matches the search criteria
+displays.</p>
+    <p outputclass="p76">Show All Stops</p>
+    <p outputclass="p13">The Show
+All Stopsfeature allows you display all
+stops in the Stop Listscreen.</p>
+    <p outputclass="p73">To display all stops:</p>
+    <p outputclass="p23">1.​ On the Stop List screen,touch the <image href="media/img(165).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Show All
+Stops, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(166).png"/>
+    </p>
+    <p outputclass="p23">3.​ On the Stop Listscreen, all stops display.</p>
+    <p id="Show_Open_Delivery" outputclass="p76">Show
+Pending</p>
+    <p outputclass="p13">The Show
+Pendingfeature allows you to display only
+stops that have an “Open” (pending) status.</p>
+    <p outputclass="p73">To display only open (pending)
+stops:</p>
+    <p outputclass="p23">1.​ On the Stop List screen,touch the <image href="media/img(167).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Show Pending, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(168).png"/>
+    </p>
+    <p outputclass="p23">3.​ On the Stop Listscreen, only open (pending) stops display.</p>
+    <p outputclass="p76">Show Completed</p>
+    <p outputclass="p13">The Show
+Completedfeature allows you to display only
+the stops that you have completed.</p>
+    <p outputclass="p73">To only display stops that you have
+completed:</p>
+    <p outputclass="p23">1.​ On the Stop List screen,touch the <image href="media/img(169).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Show
+Completed, as shown:</p>
+    <p outputclass="p208">
+      <image href="media/img(170).png"/>
+    </p>
+    <p outputclass="p209">3.​ On the Stop Listscreen, only the stops that you have completed
+display.</p>
+    <p id="Search" outputclass="p76">Show
+Exception</p>
+    <p outputclass="p13">The Show
+Exceptionfeature allows you to display only
+the stops that contain a stop exception.</p>
+    <p outputclass="p73">To only display stops that contain
+a stop exception:</p>
+    <p outputclass="p23">1.​ On the Stop List screen,touch the <image href="media/img(171).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Show
+Exception, as shown:</p>
+    <p outputclass="p60">
+      <image href="media/img(172).png"/>
+    </p>
+    <p outputclass="p23">3.​ On the Stop Listscreen, only the stops that contain a stop exception
+display.</p>
+    <p outputclass="p76">
+      <ph id="Toc364684952">Display Stop Name</ph>
+    </p>
+    <p outputclass="p13">The Display Stop Namefeature allows
+you to display the stop name for each stop in the Stop Listscreen.</p>
+    <p outputclass="p73">To display stop names in the
+Stop Listscreen:</p>
+    <p outputclass="p23">1.​ On the Stop List screen,touch the <image href="media/img(173).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Display Stop
+Name, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(174).png"/>
+    </p>
+    <p outputclass="p26">3.​ On the Stop Listscreen, the stop name is displayed for each stop, as
+shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(175).png"/>
+    </p>
+    <p outputclass="p76">
+      <ph id="Toc364684953">Display Stop Address</ph>
+    </p>
+    <p outputclass="p13">The Display Stop Addrfeature allows
+you to display the stop address for each stop in the Stop Listscreen.</p>
+    <p outputclass="p73">To display stop addresses in
+the Stop Listscreen:</p>
+    <p outputclass="p23">1.​ On the Stop List screen,touch the <image href="media/img(176).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Display Stop
+Addr, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(177).png"/>
+    </p>
+    <p outputclass="p26">3.​ On the Stop Listscreen, the stop address is displayed for each stop, as
+shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(178).png"/>
+    </p>
+    <p id="Location_Scan" outputclass="p70">
+      <ph id="Toc99359057">dxMobileFeatures</ph>
+    </p>
+    <p outputclass="p93">The sections below describe
+features that you can use when you are working with
+jobs.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359058">Update the Number of Pieces</ph>
+    </p>
+    <p outputclass="p93">You can edit the number of pieces
+for a stop if you have rights to do so. (In DECS Administration&gt;
+Customer Maintenance&gt; Distribution
+Setup, the Change
+Piecefield must be set to Yes).</p>
+    <p outputclass="p59">Note: You
+cannot update the Piecesfield if:</p>
+    <p outputclass="p104">​ The piece count that
+you enter is equal to the Expected
+Piececount.</p>
+    <p outputclass="p104">​ The piece count from
+the database does not match the Expected
+Piececount. (In this case, we assume that the Driver
+did not manually input the piece count, and the actual piece count
+is the default piece count. The piece count was changed in DECS,
+but has not been received by dxMobile).</p>
+    <p outputclass="p162">Note: You
+must submit an arrival time before the <image href="media/img(179).png"/>(Update) icon will display. (See Submit
+You<ph id="Hlt358882440">r Stop Arrival Time</ph>for
+instructions).</p>
+    <p outputclass="p73">To update the number of pieces for
+a stop:</p>
+    <p outputclass="p26">1.​ On the Stop Detailscreen, scroll down to the Update section, and touch
+the <image href="media/img(180).png"/>(Update) icon, as shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(181).png"/>
+    </p>
+    <p outputclass="p50">2.​ The Updatescreen appears, as shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(182).png"/>
+    </p>
+    <p outputclass="p212">3.​ In the Piecesfield, type the number of pieces for the stop.
+Note: If the stop has a
+delivery and a pickup, enter the number of pieces in each
+Piecefield.</p>
+    <p outputclass="p175">4.​ Touch the <image href="media/img(183).png"/>(Return) icon to return to the Stop
+Detailscreen.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359059">Re-DownloadRoute</ph>
+    </p>
+    <p outputclass="p63">When you are assigned new routes or
+when routes are updated, Dispatch automatically transmits the
+routes to your phone. If for some reason you do not receive the new
+routes or updates to existing routes, you can use the Re-Download Routesfeature. New
+routes display at the top of the Stop
+Summarylist.</p>
+    <p outputclass="p73">To re-download your
+routes:</p>
+    <p outputclass="p26">1.​ On the Stop Summary
+screen,touch the <image href="media/img(184).png"/>(Menu)icon.</p>
+    <p outputclass="p23">2.​ Touch Others. The Utilitiesscreen appears.</p>
+    <p outputclass="p26">3.​ Touch Re-Download
+Route, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(185).png"/>
+    </p>
+    <p outputclass="p26">4.​ The Warningscreen appears, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(186).png"/>
+    </p>
+    <p outputclass="p26">5.​ Touch Yesto clear the Distribution route data and re-download
+routes.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359060">Re-Download Jobs</ph>
+    </p>
+    <p outputclass="p73">To re-download your
+jobs:</p>
+    <p outputclass="p26">1.​ On the Stop Summary
+screen,touch the <image href="media/img(187).png"/>(Menu)icon.</p>
+    <p outputclass="p23">2.​ Touch Others. The Utilitiesscreen appears.</p>
+    <p outputclass="p26">3.​ Touch Re-Download
+Jobs, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(188).png"/>
+    </p>
+    <p outputclass="p26">4.​ The Warningscreen appears, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(189).png"/>
+    </p>
+    <p outputclass="p26">5.​ Touch Yesto clear the Distribution jobs data and re-download
+jobs.</p>
+    <p outputclass="p90">
+      <ph id="Toc99359061">Refresh All</ph>
+    </p>
+    <p outputclass="p13">If changes have been made to the
+dxMobile configuration, you will need to download the new
+configuration. When you use the Refresh
+Allfeature, all data is cleared, and the
+new configuration takes effect.</p>
+    <p outputclass="p13">Note: You
+can also update the dxMobile configuration by signing out of the
+dxMobile application, and then signing back in.</p>
+    <p outputclass="p196">To refresh all data and the
+dxMobile configuration:</p>
+    <p outputclass="p26">1.​ On the Stop Summary
+screen,touch the <image href="media/img(190).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Others. The Utilitiesscreen appears.</p>
+    <p outputclass="p26">3.​ Touch Refresh All, as shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(191).png"/>
+    </p>
+    <p outputclass="p26">4.​ The Warningscreen appears, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(192).png"/>
+    </p>
+    <p outputclass="p23">5.​ Touch Yesto clear all data and re-download the dxMobile
+configuration.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359062">Flush Messages</ph>
+    </p>
+    <p outputclass="p13">The dxMobile application
+automatically transmits all messages on your device (such as text
+messages or completed jobs) to the DECS server. If the connection
+to DECS is lost, these messages are queued until the connection is
+established again. They are then automatically sent to
+DECS.</p>
+    <p outputclass="p13">If for some reason the queued
+messages are not automatically uploaded to DECS when the connection
+is restored, you can use the Flush
+Messagesfeature to send them to DECS. There
+must be a connection to DECS, before the messages can be
+sent.</p>
+    <p outputclass="p79">To flush messages:</p>
+    <p outputclass="p26">1.​ On the Stop Summary
+screen,touch the <image href="media/img(193).png"/>(Menu)icon.</p>
+    <p outputclass="p23">2.​ Touch Others. The Utilitiesscreen appears.</p>
+    <p outputclass="p26">3.​ Touch Flush
+Messages, as shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(194).png"/>
+    </p>
+    <p outputclass="p49">4.​ All messages are sent to DECS.</p>
+    <p outputclass="p166">
+      <ph id="Toc99359063">Bluetooth</ph>
+    </p>
+    <p outputclass="p73">To connect to Honeywell
+4820i/Socket scanner using the Bluetooth option:</p>
+    <p outputclass="p26">1.​ On the Stop Summary
+screen,touch the<image href="media/img(195).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Others. The Utilitiesscreen appears.</p>
+    <p outputclass="p26">3.​ Touch Bluetooth, as shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(196).png"/>
+    </p>
+    <p outputclass="p50">4.​ The Bluetooth
+Servicescreen appears, as shown:</p>
+    <p outputclass="p75">
+      <image href="media/img(197).png"/>
+    </p>
+    <p outputclass="p23">5.​ Touchthe <image href="media/img(27).bmp"/>icon next to “4820i.” The Bluetooth Pairing Requestscreen
+appears.</p>
+    <p outputclass="p23">6.​ Touch Pair.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359064">About</ph>
+    </p>
+    <p outputclass="p93">The Aboutfeature displays
+information about the version of dxMobile that is currently
+running.</p>
+    <p outputclass="p93">To display dxMobile version
+information:</p>
+    <p outputclass="p26">1.​ On the Stop Summary
+screen, touch the <image href="media/img(198).png"/>(Menu)icon.</p>
+    <p outputclass="p23">2.​ Touch Others. The Utilitiesscreen appears.</p>
+    <p outputclass="p26">3.​ Touch About, as shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(199).png"/>
+    </p>
+    <p outputclass="p209">4.​ The Aboutscreen appears, as shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(200).png"/>
+    </p>
+    <p outputclass="p72">
+      <ph id="Toc99359065">Support</ph>
+    </p>
+    <p outputclass="p93">The Supportfeature helps the user
+to raise any query or assistance if needed.</p>
+    <p outputclass="p93">To need any assistance, go
+to:</p>
+    <p outputclass="p26">1.​ On the Stop Summary
+screen, touch the <image href="media/img(201).png"/>(Menu)icon.</p>
+    <p outputclass="p23">2.​ Touch Others. The Utilitiesscreen appears.</p>
+    <p outputclass="p26">3.​ Touch Support, as shown:</p>
+    <p outputclass="p151">
+      <image href="media/img(202).png"/>
+    </p>
+    <p outputclass="p209">4.​ Fill the details in Supporti.e. Date, Issue type, Approximate Time, User’s Email
+and Descriptionas shown:</p>
+    <p outputclass="p214">
+      <image href="media/img(203).png"/>
+    </p>
+    <p outputclass="p13">Note:</p>
+    <p outputclass="p116">1.​ By default, date will be display on the current day but
+you can change the date by touch on the drop an down
+button.</p>
+    <p outputclass="p116">2.​ To choose type of issue, toch on the drop and down
+buttona nd choose appropriate issue as shown:</p>
+    <p outputclass="p215">
+      <image href="media/img(204).png"/>
+    </p>
+    <p outputclass="p116">3.​ User’s Email is Mandatory to raise any
+query.</p>
+    <p outputclass="p116">​ After filling all the details, touch the send
+file.</p>
+    <p outputclass="p149">
+      <ph id="Toc99359066">Re-do Signature</ph>
+    </p>
+    <p outputclass="p93">Note:
+The Re-do Signatureoption is only available for completed stops.</p>
+    <p outputclass="p59">To re-do a signature for a
+completed stop:</p>
+    <p outputclass="p26">1.​ Locate the completed stop whose signature you want to
+re-do.</p>
+    <p outputclass="p23">2.​ Go to the Stop
+Detailsscreen.</p>
+    <p outputclass="p26">3.​ Touch the <image href="media/img(205).png"/>(Re-do Signature) icon.</p>
+    <p outputclass="p58">
+      <image href="media/img(206).png"/>
+    </p>
+    <p outputclass="p216">The Signaturescreen appears, as
+shown:</p>
+    <p outputclass="p217">
+      <image href="media/img(207).png"/>
+    </p>
+    <p outputclass="p26">4.​ Touch the Trash Canicon, as shown above.</p>
+    <p outputclass="p84">5.​ Allow the Customer to sign the screen. Or, touch
+the Cameraicon and
+take a picture of the Customer’s signature.</p>
+    <p outputclass="p23">6.​ Touch the <image href="media/img(208).png"/>(Return) icon.</p>
+    <p id="Toc418770550" outputclass="p72">
+      <ph id="Toc99359067">Capture
+aStop
+ReferenceImage</ph>
+    </p>
+    <p outputclass="p2">On the Stop
+Detailsscreen, you can capture an image (using
+the Cameraoption) that is then
+attached to the selected stop.</p>
+    <p outputclass="p125">To capture an image:</p>
+    <p outputclass="p218">1.​ After
+you arrive at a stop, on the Stop
+Detailsscreen, click the Cameraicon, as shown:</p>
+    <p outputclass="p219">
+      <image href="media/img(209).png"/>
+    </p>
+    <p outputclass="p220">The camera is enabled.</p>
+    <p outputclass="p128">2.​ Capture the
+image.</p>
+    <p outputclass="p221">3.​ Click OKto accept the image. Note: Click Cancelif you want to reject the image and
+re-take it.</p>
+    <p outputclass="p222">On the Stop
+Detailsscreen, the picture count is updated, as
+shown:</p>
+    <p outputclass="p223">
+      <image href="media/img(210).png"/>
+    </p>
+    <p id="View_the_Images" outputclass="p76">
+      <ph id="Toc418770551">View the Images that are
+Attached to Stops</ph>
+    </p>
+    <p outputclass="p125">In Order Entry, you can view the images that
+are attached to stops.</p>
+    <p outputclass="p218">1.​ In
+the Order Entrywindow,
+click Documents, as
+shown:</p>
+    <p outputclass="p224">
+      <image href="media/img(211).png"/>
+    </p>
+    <p outputclass="p225">The Order
+Documentwindow appears, as shown:</p>
+    <p outputclass="p202">
+      <image href="media/img(212).png"/>
+    </p>
+    <p outputclass="p222">The Stop
+Addressand Stop
+Numberare displayed for each image.</p>
+    <p outputclass="p218">2.​ In
+the Order Documentlist, click
+the image that you want to view.</p>
+    <p outputclass="p218">3.​ Click Opento view the document.</p>
+    <p outputclass="p90">
+      <ph id="Toc99359068">Order Entry</ph>
+    </p>
+    <p outputclass="p13">The Order
+Entryfeature allows you to create orders in
+dxMobile.</p>
+    <p outputclass="p13">Note:
+The Order Entryoption is only available if your device is configured to
+allow you to create orders. In DECS
+Administration&gt; Main Menu&gt; Customer Maintenance&gt;
+Edit Customer&gt;
+Distributionlink, in
+the Device Configurationsection, the Allow Order
+Creationfield must be set to Create Route.</p>
+    <p outputclass="p93">To enter a new order:</p>
+    <p outputclass="p26">1.​ On the Stop Details
+screen,touch the <image href="media/img(213).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Order Entry, the order entry screen appears:</p>
+    <p outputclass="p58">
+      <image href="media/img(214).png"/>
+      <image href="media/img(215).png"/>
+    </p>
+    <p outputclass="p50">3.​ In the Namefield, type a name for the order.</p>
+    <p outputclass="p26">4.​ In the Block Nofield, type a Block
+Number.</p>
+    <p outputclass="p26">5.​ In the Suitefield, type a Suite
+Number.</p>
+    <p outputclass="p26">6.​ In the Streetfield, type a Street
+Address.</p>
+    <p outputclass="p23">7.​ In the Cityfield, type a City.</p>
+    <p outputclass="p26">8.​ In the Zipfield, type a Zip
+Code.</p>
+    <p outputclass="p26">9.​ In the Piecesfield, type the number of pieces in the
+order.</p>
+    <p outputclass="p23">10.​ In the Curr Wtfield, type the current weight of the pieces.</p>
+    <p outputclass="p52">11.​ In
+the Item Scanfield, type a
+barcode, and touch Accept. Or,
+touch the <image href="media/img(28).bmp"/>(Scan) icon, and scan a barcode.
+Touch the <image href="media/img(29).bmp"/>icon to return to the Order
+Entryscreen.</p>
+    <p outputclass="p83">Note: To
+clear the Item Scanfield, touch Undo.</p>
+    <p outputclass="p26">12.​ If you want to enter another order, touch Save and Create New. Repeat
+Steps 1-11 to create another order.</p>
+    <p outputclass="p226">Or,</p>
+    <p outputclass="p83">If you are finished entering
+orders, touch Save and
+Complete, as shown:</p>
+    <p outputclass="p188">
+      <image href="media/img(216).png"/>
+    </p>
+    <p outputclass="p90">
+      <ph id="Toc99359069">Transfer Packages to Another Stop on the
+Route</ph>
+    </p>
+    <p outputclass="p13">A Transferis a where the Driver,
+while delivering packages to a stop, receives a request to deliver
+one or more packages to another stop on the same route, but not to
+the depot stop. This request may occur when another store is low on
+inventory and needs the goods or goods were sent to the wrong stop.
+The Driver uses the Transferfeature to perform this task. A new on-demand job is
+created. The Driver continues the route. When he arrives at the
+transfer stop, he completes both the route stop and the transfer
+job.</p>
+    <p outputclass="p151">
+      <image href="media/img.emf"/>
+    </p>
+    <p outputclass="p14">To transfer packages on a stop to
+another stop on the route:</p>
+    <p outputclass="p116">1.​ On the Stop Listscreen, touch the stop whose packages you want to
+transfer. The Stop Detailsscreen appears.</p>
+    <p outputclass="p116">2.​ Press the<image href="media/img(217).png"/>(Menu)button on your
+device.</p>
+    <p outputclass="p116">3.​ Touch Transfer. The Transferscreen appears.</p>
+    <p outputclass="p116">4.​ Touch the stop to which you want to transfer the
+packages. A Warningscreen appears.</p>
+    <p outputclass="p116">5.​ Touch Yes.</p>
+    <p outputclass="p90">
+      <ph id="Toc99359070">Join Stops</ph>
+    </p>
+    <p outputclass="p13">You can join multiple stops (that
+have the same postal code) so that items that are scheduled to be
+delivered to the same postal code can be delivered
+together.</p>
+    <p outputclass="p13">For example, Stops 2, 3, and 10 all
+have items that need to be delivered to the same postal code. You
+can join Stop 2 to Stop 3 and Stop 10. When you complete Stop 2,
+dxMobile also completes Stop 3 and Stop 10 with the same POD and
+image signature.</p>
+    <p outputclass="p59">To join stops:</p>
+    <p outputclass="p227">Note: You
+cannot join a stop that is in “Arrived”
+status.</p>
+    <p outputclass="p228">1.​ On the Stop Listscreen, touch the stop that you want to join with
+another stop. The Stop Detailsscreen appears.</p>
+    <p outputclass="p229">2.​ Touch the <image href="media/img(218).png"/>(Menu)icon.</p>
+    <p outputclass="p230">3.​ Touch Join, as shown:</p>
+    <p outputclass="p231">
+      <image href="media/img(219).png"/>
+    </p>
+    <p outputclass="p232">4.​ The Join Listscreen appears, as shown:</p>
+    <p outputclass="p233">
+      <image href="media/img(220).png"/>
+    </p>
+    <p outputclass="p230">5.​ Touch one or more stops to join. A check mark displays
+next to each stop that you touch.</p>
+    <p outputclass="p232">6.​ Touch Submit.</p>
+    <p outputclass="p76">Un-Join Stops</p>
+    <p outputclass="p73">To un-join stops:</p>
+    <p outputclass="p227">Note: You
+cannot un-join a stop that is in “Arrived”
+status.</p>
+    <p outputclass="p230">1.​ On the Stop Listscreen, touch the stop that you want to un-join.
+The Stop Detailsscreen appears.</p>
+    <p outputclass="p230">2.​ Touch the <image href="media/img(221).png"/>(Menu)icon.</p>
+    <p outputclass="p230">3.​ Touch Join, the Join Listscreen appears, as shown:</p>
+    <p outputclass="p234">
+      <image href="media/img(222).png"/>
+    </p>
+    <p outputclass="p230">4.​ Touch the stops that you want to un-join. The check
+marks are removed.</p>
+    <p outputclass="p19">5.​ Touch Submit.</p>
+    <p id="Toc256755736" outputclass="p6"/>
+    <p outputclass="p70">
+      <ph id="Toc99359071">Create Routes Based on Scanning 2-D
+Barcodes</ph>
+    </p>
+    <p outputclass="p63">You can allow routes to be built
+from dxMobile based on scanning 2-D barcodes. The 2-D barcodes
+contain information about the package, address information, contact
+information, special instructions, etc. The driver/vendor scans the
+barcodes, and then sends the information to the DECS server. The
+server then processes the information and creates
+Routes.</p>
+    <p outputclass="p93">To enable this feature, perform the
+following steps:</p>
+    <p outputclass="p116">1.​ In DECS Administration &gt; Distribution Setup, define
+the Data Formatas Paycheck 2D Scan Route
+Data. See Data
+Fo<ph id="Hlt256755591">rmat Option</ph>for
+details.</p>
+    <p outputclass="p116">2.​ In DECS Administration &gt; Device Maintenance, enable
+the Create System Routeoption. See Enable th<ph id="Hlt256755595">e
+Create RouteOption</ph>for
+details.</p>
+    <p outputclass="p116">3.​ In DECS Administration &gt; Device Maintenance, define
+the Route Plan Scopefield. See Define the
+Route Pla<ph id="Hlt256755601">n ScopeOption</ph>for
+details.</p>
+    <p id="Paycheck_2D_Scan_1" outputclass="p113">1. Data Format
+Option [DECS Administration]</p>
+    <p outputclass="p13">To allow routes to be built from
+dxMobile based on scanning 2-D barcodes, you must first define
+the Data Formatfield (in DECS
+Administration&gt; Distribution Setup).</p>
+    <p outputclass="p59">To define the Data Formatfield:</p>
+    <p outputclass="p116">1.​ Go to DECS
+Administration&gt; Main Menu&gt; Customer Maintenance.</p>
+    <p outputclass="p116">2.​ Click the ac</p>
+    <p outputclass="p116">3.​ count number for the customer whose Data Formatfield you want to
+define. The Edit Customerwindow appears.</p>
+    <p outputclass="p116">4.​ Click the Distributionlink. The
+Distribution Setupwindow
+appears.</p>
+    <p outputclass="p231">
+      <image href="media/img(223).png"/>
+    </p>
+    <p outputclass="p229">5.​ In the Data Formatfield, click the drop-down arrow, and select
+Paycheck 2D Scan Route Data.</p>
+    <p outputclass="p116">6.​ Click Save.</p>
+    <p id="Define_the_Create" outputclass="p113">2. Enable the
+Create RouteOption [DECS
+Administration]</p>
+    <p outputclass="p13">After you have defined the
+Data Format, you must
+enable the device to allow dxMobile to create Routes. A Route is
+created by the DECS system based on the 2-D barcode
+information.</p>
+    <p outputclass="p59">To enable a device to create
+Routes:</p>
+    <p outputclass="p116">1.​ Go to DECS
+Administration&gt; Main Menu&gt; Driver Menu &gt; Device Maintenance.</p>
+    <p outputclass="p19">2.​ Click the name of the driver whose device you want to
+edit. The Edit Device window appears.</p>
+    <p outputclass="p236">
+      <image href="media/img(224).png"/>
+    </p>
+    <p outputclass="p237">3.​ In the Create System
+Routefield, click the check box to place a
+check mark in the field. When this option is checked, an option
+called “Create Route” displays on dxMobile. The DECS
+server creates routes based on the customer’s route
+assignment. To turn off the option, click the check box to remove
+the check mark.</p>
+    <p outputclass="p116">4.​ Click Save.</p>
+    <p outputclass="p76">
+      <ph id="Toc256755739">dxMobile –Create RouteOption</ph>
+    </p>
+    <p outputclass="p38">When the Data
+Formatoption is set to Paycheck 2D Scan Route Data(in DECS Admin),
+and the Create System
+Routeoption is enabled (in DECS Admin), the
+Create Routeoption displays on the
+Android device as shown below:</p>
+    <p outputclass="p238">
+      <image href="media/img(225).png"/>
+    </p>
+    <p id="Define_the_Route" outputclass="p113">
+      <ph id="Toc99359074">3. Define the Route Plan ScopeOption</ph>[DECS
+Administration]</p>
+    <p outputclass="p13">In Device Maintenance, you can
+configure a device to download only route plans assigned to the
+driver, all route plans, or no route plans. This feature works with
+the Create System Routefeature described above.</p>
+    <p outputclass="p59">To define the Route Plan Scopeoption for a
+device:</p>
+    <p outputclass="p116">1.​ Go to DECS
+Administration&gt; Main Menu&gt; Driver Menu&gt; Device Maintenance.</p>
+    <p outputclass="p116">2.​ Click the name of the driver whose device you want to
+edit. The Edit Devicewindow appears.</p>
+    <p outputclass="p236">
+      <image href="media/img(226).png"/>
+    </p>
+    <p outputclass="p229">3.​ In the Route Plan
+Scopefield, click the drop-down arrow and
+select one of the following options:</p>
+    <p outputclass="p239">​ None– No routes are displayed on the
+phone.</p>
+    <p outputclass="p239">​ Own Route Plans– dxMobile displays
+only route plans that are assigned to the driver.</p>
+    <p outputclass="p239">​ All Route Plans– dxMobile displays
+all route plans defined for the branch.</p>
+    <p outputclass="p229">4.​ Click Save.</p>
+    <p outputclass="p76">
+      <ph id="Toc256755741">dxMobile – Route Plan
+Display</ph>
+    </p>
+    <p outputclass="p14">When the Route Plan Scopefield has been
+defined in DECS Administration, the Route Plans display on the
+device according to the option that you chose, as shown
+below:</p>
+    <p outputclass="p202">
+      <image href="media/img(227).png"/>
+    </p>
+    <p outputclass="p240">1.​ Select the desired route.</p>
+    <p outputclass="p241">2.​ Scan the 2-D barcodes.</p>
+    <p outputclass="p241">3.​ Select Done. The barcode information is sent to the DECS server for
+route creation.</p>
+    <p outputclass="p242">
+      <ph id="Toc99359075">4.PackageValidationCheck</ph>
+    </p>
+    <p outputclass="p243">A package validation check has
+been added upon scanning. This gives the user more visibility, if
+the scanned barcode is an overage or if it belongs to the another
+customer etc.</p>
+    <p outputclass="p153">Below is the example, when
+scanning a wrong barcode which does not belong to the customer, it
+notifies the driver that the package does not belong to the scan
+group as selected.</p>
+    <p outputclass="p168">
+      <image href="media/img(228).png"/>
+    </p>
+    <p outputclass="p180">-​ The user can choose to Cancel or Accept the
+same.</p>
+    <p outputclass="p90">
+      <ph id="Toc99359076">Messaging</ph>
+    </p>
+    <p outputclass="p93">The dxMobile application allows you
+to send a text message to Dispatch, and receive text messages from
+Dispatch. For example, Dispatch may send you a text message
+requesting your current status. Or, you may want to send a text
+message to Dispatch informing them that you are delayed.</p>
+    <p outputclass="p13">You can view specific messages by
+filtering the Messageslist. You can create messages using a free form or a
+canned form. You can also reply to messages and delete
+messages.</p>
+    <p outputclass="p13">A message has a status of either
+“V,” which indicates that you have read the message, or
+“N,” which indicates that you have not yet read the
+message.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359077">View Messages</ph>
+    </p>
+    <p outputclass="p196">To view your messages:</p>
+    <p outputclass="p26">1.​ In the dxMobile application, touch the <image href="media/img(229).png"/>(Messages) icon, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(230).png"/>
+    </p>
+    <p outputclass="p26">2.​ The Messagingscreen appears and displays the messages that Dispatch
+has sent to you, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(231).png"/>
+    </p>
+    <p outputclass="p26">3.​ Touch a message. The message displays, as
+shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(232).png"/>
+    </p>
+    <p outputclass="p72">
+      <ph id="Toc99359078">Delete a Message</ph>
+    </p>
+    <p outputclass="p73">To delete a single
+message:</p>
+    <p outputclass="p23">1.​ On the Messagingscreen, touch the message that you want to delete. The
+message displays.</p>
+    <p outputclass="p26">2.​ Touch Delete, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(233).png"/>
+    </p>
+    <p outputclass="p23">3.​ The message is deleted from the Messagelist.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359079">Reply to a Message</ph>
+    </p>
+    <p outputclass="p73">To reply to a message:</p>
+    <p outputclass="p26">1.​ On the Messagingscreen, touch the message that you want to reply to. The
+message displays.</p>
+    <p outputclass="p26">2.​ Touch Reply, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(234).png"/>
+    </p>
+    <p outputclass="p26">3.​ The Messaging –
+Replyscreen appears, as shown:</p>
+    <p outputclass="p244">
+      <image href="media/img(235).png"/>
+    </p>
+    <p outputclass="p49">4.​ In the Replysection, use the phone’s keypad to type a
+message.</p>
+    <p outputclass="p49">5.​ Touch Send.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359080">Filter Messages</ph>
+    </p>
+    <p outputclass="p93">You can filter the Messageslist to view specific
+messages.</p>
+    <p outputclass="p76">Show All</p>
+    <p outputclass="p73">To show all of your messages (read
+and unread) in the Messagelist:</p>
+    <p outputclass="p23">1.​ On the Messaging screen,touch the <image href="media/img(236).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Show All, as shown:</p>
+    <p outputclass="p60">
+      <image href="media/img(237).png"/>
+    </p>
+    <p outputclass="p23">3.​ All of the messages that Dispatch has sent to you
+display in the MessagesList.</p>
+    <p outputclass="p76">Show New</p>
+    <p outputclass="p73">To show all of the new messages
+that you have not yet read:</p>
+    <p outputclass="p26">1.​ On the Messaging screen,touch the <image href="media/img(238).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Show New, as shown:</p>
+    <p outputclass="p192">
+      <image href="media/img(239).png"/>
+    </p>
+    <p outputclass="p23">3.​ All of the new messages that you have not yet read
+display in the MessagesList.</p>
+    <p outputclass="p76">Show Viewed</p>
+    <p outputclass="p73">To show all of the messages that
+you have already viewed:</p>
+    <p outputclass="p23">1.​ On the Messaging screen,touch the <image href="media/img(240).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Show Viewed, as shown:</p>
+    <p outputclass="p192">
+      <image href="media/img(241).png"/>
+    </p>
+    <p outputclass="p23">3.​ All of the messages that you have already viewed display
+in the MessagesList.</p>
+    <p outputclass="p76">Show Replied</p>
+    <p outputclass="p73">To show all of the messages to
+which you have replied:</p>
+    <p outputclass="p23">1.​ On the Messaging screen,touch the <image href="media/img(242).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Show Replied, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(243).png"/>
+    </p>
+    <p outputclass="p46">3.​ All of
+the messages to which you have replied display in the MessagesList.</p>
+    <p outputclass="p72">
+      <ph id="Toc99359081">Delete All Messages</ph>
+    </p>
+    <p outputclass="p93">To delete all of the messages in
+the Messageslist:</p>
+    <p outputclass="p26">1.​ On the Messaging screen,touch the <image href="media/img(244).png"/>(Menu)icon.</p>
+    <p outputclass="p26">2.​ Touch Delete All, as shown:</p>
+    <p outputclass="p245">
+      <image href="media/img(245).png"/>
+    </p>
+    <p outputclass="p23">3.​ All of the messages in the Messageslist are
+deleted.</p>
+    <p outputclass="p90">
+      <ph id="Toc99359082">Create Messages</ph>
+    </p>
+    <p outputclass="p13">You can create two types of
+messages: Free Formand Canned. A Free Formmessage is a message that you create and send. A
+Cannedmessage is a
+pre-defined message that you can select and send.</p>
+    <p outputclass="p76">Create and Send a Free FormMessage</p>
+    <p outputclass="p93">To create and send a Free Formmessage:</p>
+    <p outputclass="p26">1.​ On the Messaging screen,touch the<image href="media/img(30).bmp"/>(New) icon, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(246).png"/>
+    </p>
+    <p outputclass="p26">2.​ The Free Msg/Canned
+Msgscreen appears, as shown:</p>
+    <p outputclass="p74">
+      <image href="media/img(247).png"/>
+    </p>
+    <p outputclass="p209">3.​ In the Free Formsection, use the phone’s keypad to type a
+message.</p>
+    <p outputclass="p209">4.​ Touch Send.</p>
+    <p outputclass="p76">Create and Send a Canned
+Message</p>
+    <p outputclass="p93">To create and send a Cannedmessage:</p>
+    <p outputclass="p26">1.​ On the Messaging screen,touch the<image href="media/img(31).bmp"/>(New) icon, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(248).png"/>
+    </p>
+    <p outputclass="p26">2.​ The Free Msg/Canned
+Msgscreen appears, as shown:</p>
+    <p outputclass="p231">
+      <image href="media/img(249).png"/>
+    </p>
+    <p outputclass="p26">3.​ Touch CannedMSG, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(250).png"/>
+    </p>
+    <p outputclass="p23">4.​ In the Canned
+Messagesection, select the desired canned
+message.</p>
+    <p outputclass="p23">5.​ Touch Send.</p>
+    <p outputclass="p70">
+      <ph id="Toc99359083">Power Off/Exit dxMobile</ph>
+    </p>
+    <p outputclass="p32">To power off/exit the dxMobile
+application:</p>
+    <p outputclass="p26">1.​ On the Stop Summaryscreen, touch the down arrow in the title bar to display
+the Status Updatemenu, as shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(251).png"/>
+    </p>
+    <p outputclass="p26">2.​ Touch Power
+Off/Exit, as shown above. The Exitscreen appears, as
+shown:</p>
+    <p outputclass="p58">
+      <image href="media/img(252).png"/>
+    </p>
+    <p outputclass="p23">3.​ Touch Yesto exit the dxMobile application.</p>
+    <p outputclass="p12">
+      <ph id="Toc99359084">GPS Error Codes</ph>
+    </p>
+    <p outputclass="p167">If errors occur when GPS information is sent
+from the dxMobile device to DECS, the following error codes may
+display:</p>
+    <table outputclass="t1">
+      <tgroup cols="2">
+        <tbody>
+          <row outputclass="r1">
+            <entry outputclass="p202">Error Code</entry>
+            <entry outputclass="p202">Description</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p167">"GPS – Not Open"</entry>
+            <entry outputclass="p167">GPS is turned off.</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p167">"GPS - Exception"</entry>
+            <entry outputclass="p167">GPS is turned on,but GetPosition contains
+exceptions.</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p167">"GPS – No Signal"</entry>
+            <entry outputclass="p167">GPS is turned on,GetPosition is normal, but the
+latitude/longitude values are ”0” or failed to return
+values.</entry>
+          </row>
+          <row outputclass="r1">
+            <entry outputclass="p248">"GPS – User
+Disabled”</entry>
+            <entry outputclass="p167">GPS is deactivated in user
+configuration.</entry>
+          </row>
+        </tbody>
+      </tgroup>
+    </table>
+    <p outputclass="p249">
+      <ph id="Toc99359085">Frequently Asked Questions</ph>
+    </p>
+    <p outputclass="p250">How to Send the Log
+Files?</p>
+    <p outputclass="p93">
+      <image href="media/img(253).png"/>To
+send the log files:</p>
+    <p outputclass="p23">1.​ On the Android device, touch the <image href="media/img(254).png"/>(Application) icon.</p>
+    <p outputclass="p23">2.​ On the Stop Summaryscreen, touch the <image href="media/img(255).png"/>(Menu)icon.</p>
+    <p outputclass="p23">3.​ Touch Others. The Utilitiesscreen appears.</p>
+    <p outputclass="p26">4.​ Touch Support, as shown:</p>
+    <p outputclass="p151">
+      <image href="media/img(256).png"/>
+    </p>
+    <p outputclass="p209">5.​ Fill the details in Supporti.e. Date, Issue type, Approximate Time, User’s Email
+and Descriptionas shown:</p>
+    <p outputclass="p214">
+      <image href="media/img(257).png"/>
+    </p>
+    <p outputclass="p13">Note:</p>
+    <p outputclass="p116">1.​ By default, date will be display on the current day but
+you can change the date by touch on the drop an down
+button.</p>
+    <p outputclass="p116">2.​ To choose type of issue, toch on the drop and down
+buttona nd choose appropriate issue as shown:</p>
+    <p outputclass="p215">
+      <image href="media/img(258).png"/>
+    </p>
+    <p outputclass="p116">3.​ User’s Email is Mandatory to raise any
+query.</p>
+    <p outputclass="p116">​ After filling all the details, touch the send
+file.</p>
+    <p>TForce Final Mile</p>
+    <p>
+14881 Quorum Drive, Suite 700</p>
+    <p>
+Dallas, TX 75254</p>
+    <p>USA</p>
+    <p>
+Phone: 855.396.2639</p>
+    <p outputclass="p2">http://www.tforce.com</p>
+    <p outputclass="p252">
+      <ph id="PictureBullets">
+        <image href="media/img(259).png"/>
+        <image href="media/img(260).png"/>
+        <image href="media/img(261).png"/>
+      </ph>
+    </p>
+  </body>
+</topic>

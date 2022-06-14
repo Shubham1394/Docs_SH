@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE concept PUBLIC "-//OASIS//DTD DITA Concept//EN" "concept.dtd">
+<concept id="Order_Date_Scenarios">
+    <title>Order Date Scenarios</title>
+    <shortdesc/>
+    <conbody>
+        <p>
+            <ul id="ul_ytj_yrh_wtb">
+                <li>If the order date is before today, then the field Estimated Delivery Date is not
+                    visible</li>
+                <li>​ if the order date is todaythen that field Estimated Delivery Date is visible
+                    and that the date is displayed</li>
+            </ul>
+        </p>
+    </conbody>
+</concept>

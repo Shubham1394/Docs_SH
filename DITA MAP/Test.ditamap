@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE map PUBLIC "-//OASIS//DTD DITA Map//EN" "map.dtd">
+<map>
+    <title>Release</title>
+    <topicref href="../DITA%20TOPICS/Test/Intro.dita"/>
+    <topicref
+        href="../DITA%20TOPICS/Test/Final%20Mile%20Track%20Release%20Notes%205.55.0%20Final.dita"/>
+</map>
